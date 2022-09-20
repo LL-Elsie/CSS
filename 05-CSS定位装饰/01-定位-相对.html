@@ -7,9 +7,19 @@
     <title>Document</title>
     <style>
         .box {
+            /* 如果left和right都有，以left为准;top和bottom都有，以top为准 */
             position: relative;
             left: 100px;
             top: 200px;
+
+
+            right: 200px;
+            bottom: 400px;
+
+            /* 1、占有原来位置
+               2、仍然保留标签原有的显示模式特点
+               3、改变位置参照自己原来的位置
+            */
             width: 200px;
             height: 200px;
             background-color: pink;
