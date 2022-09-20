@@ -6,30 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box {
-            /* 绝对定位：
-                1、先找已经定位的父级，如果有这样的父级就以这个父级为参照物进行定位
-                2、有父级，但父级没有定位，以浏览器窗口为参照物进行定位
-            */
-            /* 第二种：父级定位 */
+        .father {
             position: absolute;
-            /* left: 200px; */
-            left: 0;
-            top: 0;
+            width: 400px;
+            height: 400px;
+            background-color: pink
+            ;
+        }
+        .son {
+            /* 定位：静态、相对、绝对 */
+            /* 父级采用相对定位模式，子级采用绝对定位模式---子绝父相 */
+            /* position: relative; */
+            /* right: 20px; */
+            /* position: absolute; */
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+        }
 
-
-            /* 1、脱标，不占位置
-               2、改变标签的显示模式特点：具备了行内块的特点（在一行共存，且宽高生效）
-            */
+        .sun {
+            position: absolute;
+            right: 20px;
+            bottom: 50px;
             width: 200px;
             height: 200px;
-            background-color: pink;
+            background-color: green;
         }
+
+        /* 绝对定位查找父级的方式：就近找定位的父级，如果逐层查找不到这样的父级，就以浏览器窗口为参照定位 */
     </style>
 </head>
 <body>
-    <p>理智，是一朵花，盛开于智慧的春风申;情感，是一阵雨，常常将这一朵花摧残。情与理，对立而又共生于现实世界。</p>
-    <div class="box">box</div>
-    <p>情感、这一人类与生俱来的元素在一代仁人贤士的一生中抒写得淋漓尽致。</p>
+    <div class="father">
+        <div class="son">
+            <div class="sun"></div>
+        </div>
+    </div>
 </body>
 </html>
