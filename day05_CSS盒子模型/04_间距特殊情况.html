@@ -7,9 +7,25 @@
     <title>Document</title>
     <style>
         /* 通配符选择器---能匹配页面中 */
+        /* 这行代码不精确，因为匹配的精准度不高，有一些元素没有内边距和外边距 */
+        
+            /* reset.css重置样式文件中
+                p,h1,h2,h3,h4,h5,h6,...,ul,ol,li,dl,dt,dd,table,form,input {
+                    margin:0;padding:0;
+                } */
+       
         * {
             margin: 0;
             padding: 0;
+        } 
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* margin: -50px; */
+            margin-top: -50px;
+            padding: -50px;
         }
     </style>
 </head>
@@ -19,10 +35,13 @@
         2.margin可以取值为负数；padding不能取值为负数
         3.margin:0 auto;------元素设置水平居中显示
      -->
-
-    <div>我是一个div标签</div>
+    <!-- 1.验证了取值可以为0 -->
+    <!-- <div>我是一个div标签</div>
     <p>我是一个p标签</p>
-    <h1>我是一个h1标签</h1>
+    <h1>我是一个h1标签</h1> -->
+
+    <!-- 2.margin可以取值为负数；padding不能取值为负数 -->
+    <div class="box">我是一个普通的div标签</div>
 
 </body>
 </html>
