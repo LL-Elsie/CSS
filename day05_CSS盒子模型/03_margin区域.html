@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .red {
+            height: 100px;
+            width: 100px;
+            border: 10px solid gray;
+            background-color: red;
+            /* 外边距 */
+            margin: 20px 30px 40px 100px;
+        }
+
+        .green {
+            height: 100px;
+            border: 10px solid gray;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        margin外边距区域
+            注意事项：
+                1）背景颜色不会蔓延到外边距区域中
+                2）盒子模型添加外边距时，会撑开盒子占位
+            研究取值：
+                margin:v1;---------------实现了四个方向的外边距，v1上右下左
+                margin:v1 v2;------------实现了四个方向的外边距，v1上下，v2左右
+                margin:v1 v2 v3;---------实现了四个方向的外边距，v1上，v2左右，v3下
+                margin:v1 v2 v3 v4;------实现了四个方向的外边距，v1上，v2右，v3下，v4左
+    
+                规律：当margin取值为四个值时，可以记忆为上右下左
+
+            问题：能不能设置一个方向的距离
+                单一外边距属性：margin-方向词
+                    上外边距：margin-top
+                    右外边距：margin-right
+                    下外边距：margin-bottom
+                    左外边距：margin-left
+
+                
+     -->
+
+    <div class="red"></div>
+    <div class="green"></div>
+</body>
+</html>

@@ -8,11 +8,15 @@
     <style>
         .box {
             width: 200px;
-            height: 200px;
+            /* height: 200px; */
             border: 10px solid gray;
             background-color: orange;
             /* padding */
-            padding: 30px;
+            /* padding: 10px 20px 30px 40px; */
+            padding-top: 30px;
+            padding-right: 60px;
+            padding-bottom: 80px;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -21,7 +25,24 @@
         添加完内边距之后
         注意事项：
             1）盒子变大了---内边距会撑开盒子大小，占位置
-            2）背景颜色会蔓延到内边距区域
+            2）背景颜色会蔓延到内边距区域===背景颜色能蔓延到边框位置
+
+        研究取值：
+            padding:v1;---------------实现了四个方向的内边距，v1上右下左
+            padding:v1 v2;------------实现了四个方向的内边距，v1上下，v2左右
+            padding:v1 v2 v3;---------实现了四个方向的内边距，v1上，v2左右，v3下
+            padding:v1 v2 v3 v4;------实现了四个方向的内边距，v1上，v2右，v3下，v4左
+            总结：无论你padding取值为v1-v4，都可以实现四个方向的取值，取值方向为顺时针方向
+
+            padding:30px 0px 0px 0px;
+
+        引出问题：
+            如何只设置一个方向
+            padding-方向词
+                padding-top------------上内边距
+                padding-right----------右内边距
+                padding-bottom---------下内边距
+                padding-left-----------左内边距
      -->
     <div class="box">
         我是一个普通的div元素，我觉着你好漂亮
