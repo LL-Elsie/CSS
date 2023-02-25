@@ -9,11 +9,20 @@
         .box {
             width: 200px;
             height: 200px;
-            background-color: red;
+            border: 10px solid gray;
+            background-color: orange;
+            /* padding */
+            padding: 30px;
         }
     </style>
 </head>
 <body>
+    <!-- 
+        添加完内边距之后
+        注意事项：
+            1）盒子变大了---内边距会撑开盒子大小，占位置
+            2）背景颜色会蔓延到内边距区域
+     -->
     <div class="box">
         我是一个普通的div元素，我觉着你好漂亮
     </div>
