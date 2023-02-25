@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            /* 添加边框 */
+            /* border-top: 1px solid transparent; */
+            /* 添加浮动 */
+            /* float: left; */
+            /* overflow: hidden; */
+            /* 4）定位 */
+            /* position: absolute; */
+            /* 给父元素添加padding-top */
+            padding-top: 100px;
+        }
+
+        .green {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            /* margin-top: 100px; */
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        前提：父子包含结构
+            一般情况下，会给子元素添加margin-top
+            注意：当给子元素添加margin-top时，会出现问题：作用在父元素上面（考察外边距重合）
+        解决：
+            1）本质原因：外边距可以是边框与边框之间的距离
+                给父元素添加一个边框
+            2）给父元素或者是子元素添加浮动
+                添加了浮动后会解决当前问题
+                原因：触发了BFC机制---只要添加浮动就会触发BFC机制，会形成一个独立的区域，这个区域不会受外界干扰，也不会干扰到外界
+            3）给父元素添加一个 overflow:hidden
+                也会形成一个BFC区域
+            4)给父元素添加定位：position:absolute/fixed
+                也会形成一个BFC区域
+        解决问题：不使用margin-top能否调整间距？
+            完全可以调整间距
+                给父元素添加对应的padding-top ;需要给父元素的高度降低对应的padding取值
+
+     -->
+
+    <div class="red">
+        <div class="green"></div>
+    </div>
+</body>
+</html>
