@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1200px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        水平居中的盒子添加 margin:0 quto;产生的效果
+        如果给margin:0 quto;的元素添加浮动后，margin:0 quto;会失效
+            原因：margin:0 quto;只能让文档流中的内容实现水平居中，浮动之后，脱离文档流了
+     -->
+
+    <div class="box"></div>
+</body>
+</html>

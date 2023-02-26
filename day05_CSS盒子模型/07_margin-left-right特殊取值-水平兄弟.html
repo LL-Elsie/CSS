@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            float: left;
+            /* 左侧盒子-右外边距 */
+            margin-right: 100px;
+        }
+        .green {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            float: left;
+            /* 右侧盒子-左外边距 */
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        让盒子横向排列：需要使用浮动
+            float:left
+        如果是横向排列的两个盒子，给左侧盒子添加右外边距，给右侧盒子添加左侧盒子
+            解析：外边距不会重合，原因点：触发了BFC形成了独立的区域
+            外边距的距离为：外边距之和
+     -->
+    <div class="red"></div>
+    <div class="green"></div>
+</body>
+</html>
