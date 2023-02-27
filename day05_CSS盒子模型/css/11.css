@@ -2,11 +2,56 @@
     margin: 0;
     padding: 0;
 }
+/* 取消列表项 */
+ul,ol,li {
+    list-style: none;
+}
 
 .logo {
     width: 1002px;
     height: 100px;
-    background-color: orange;
     /* 版心居中 */
     margin: 0 auto;
+}
+.logo>.left {
+    float: left;
+    margin-top: 22px;
+    /* 问题：给子元素添加margin-top，不会影响到父元素身上 */
+}
+
+.logo>.right {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.layoutNav {
+    height: 44px;
+    background-color: #d92b34;
+}
+
+.nav {
+    width: 1002px;
+    height: 44px;
+    background-color: #c8141f;
+    margin: 0 auto;
+}
+
+.nav li {
+    float: left;
+    /* 文本垂直居中 */
+    line-height: 44px;
+    font-size: 14px;
+    color: white;
+
+
+    /* 导航栏设置第一种方法-使用固定宽度 */
+    /* width: 100px;
+    text-align: center; */
+    /* 第二个方法：调整间距 */
+    padding: 0 23px;
+
+}
+.nav>ul>li:hover {
+    background-color: orange;
 }
