@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 1002px;
+    height: 100px;
+    background-color: orange;
+    /* 版心居中 */
+    margin: 0 auto;
+}
