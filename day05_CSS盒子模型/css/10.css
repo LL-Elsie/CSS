@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 标题区域 */
+.title {
+    width: 1052px;
+    height: 46px;
+    /* 上下边框 */
+    border-top: 2px solid gray;
+    border-bottom: 1px solid gray;
+}
+.title>.sp1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #254282;
+    /* 行高添加在了span标签上了
+        问题：放在父元素上课实现效果，放在子元素上也可实现效果被称之为属性的继承
+    */
+    line-height: 46px;
+
+}
+
+.title>.sp2 {
+    font-size: 10px;
+    color: #99a5c2;
+}
+
+.info {
+    width: 1052px;
+    height: 326px;
+    background-color: red;
+    margin-top: 24px;
+}
+.info>div {
+    height: 158px;
+    width: 188px;
+    background-color: green;
+    /* 横向显示 */
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
