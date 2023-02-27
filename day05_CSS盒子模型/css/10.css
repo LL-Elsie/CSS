@@ -30,15 +30,25 @@
 .info {
     width: 1052px;
     height: 326px;
-    background-color: red;
     margin-top: 24px;
 }
 .info>div {
     height: 158px;
     width: 188px;
-    background-color: green;
     /* 横向显示 */
     float: left;
     margin-right: 12px;
     margin-bottom: 8px;
+}
+/* 解决图片下面的留白问题 */
+img {
+    display: block;
+}
+
+.info>div>p {
+    height: 34px;
+    line-height: 34px;
+    background-color: #f6f7f8;
+    font-size: 12px;
+    text-align: center;
 }
