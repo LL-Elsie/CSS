@@ -41,14 +41,34 @@ body {
 .info {
     width: 742px;
     height: 274px;
-    background-color: orange;
     margin: 0 auto;
 }
 .info>div {
     width: 226px;
     height: 274px;
-    background-color: red;
+    background-color: white;
     /* 横向显示 */
     float: left;
     margin-right: 32px;
+}
+
+.info>.right {
+    margin-right: 0px;
+}
+
+/* 只要插入图片，就要把下面的留白问题解决掉 */
+img {
+    display: block;
+    /* 三个像素的下边框 */
+    border-bottom: 3px solid skyblue;
+}
+.info>div>div {
+    margin-top: 16px;
+    margin-left: 12px;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.last {
+    color: gray;
 }
