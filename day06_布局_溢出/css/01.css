@@ -106,7 +106,6 @@ ul,ol,li {
 /* 内容区域 */
 .news {
     height: 242px;
-    background-color: orange;
 }
 
 /* 公司新闻区域 */
@@ -116,7 +115,6 @@ ul,ol,li {
 }
 .news>.lef {
     width: 482px;
-    background-color: red;
 }
 
 .news>.cen {
@@ -126,4 +124,26 @@ ul,ol,li {
 .news>.rig {
     width: 242px;
     background-color: blue;
+}
+.news>div>.pTit {
+    /* 上边间距和下边间距 */
+    margin-top: 34px;
+    margin-bottom: 22px;
+    color: #414550;
+    font-size: 20px;
+}
+
+.news>.lef>ul {
+    font-size: 14px;
+    line-height: 24px;
+    color: #8a8a8a;
+}
+.news>.lef span {
+    float: right;
+    margin-right: 28px;
+}
+
+.news>.lef li {
+    background: url(../img/dian.png) no-repeat 0 center;
+    text-indent: 14px;
 }
