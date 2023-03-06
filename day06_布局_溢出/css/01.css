@@ -119,11 +119,13 @@ ul,ol,li {
 
 .news>.cen {
     width: 240px;
-    background-color: green;
+    background-color: #f1f1f1;
 }
 .news>.rig {
     width: 242px;
-    background-color: blue;
+    background-color: #fbfbfb;
+    /* 插入背景图片 */
+    background: url(../img/horse.png) no-repeat center bottom;
 }
 .news>div>.pTit {
     /* 上边间距和下边间距 */
@@ -147,3 +149,84 @@ ul,ol,li {
     background: url(../img/dian.png) no-repeat 0 center;
     text-indent: 14px;
 }
+
+/* 单独实现缩进样式 */
+.news>.cen>.pTit {
+    text-indent: 20px;
+}
+.news>.rig>.pTit {
+    text-indent: 20px;
+}
+
+
+/* 公司介绍区域的p标签样式 */
+.news>.cen>.p1 {
+    width: 132px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 10px;
+    color: #777777;
+}
+
+
+.news>.cen>.p2 {
+    width: 194px;
+    margin-left: 20px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #777777;
+    margin-top: 15px;
+}
+/* 人才招聘区域设置 */
+.news>.rig>.p1 {
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 22px;
+    margin-right: 40px;
+    color: #5a5a5a;
+}
+
+
+/* 市场项目区域 */
+.market {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #414550;
+}
+
+/* 市场项目内容区域 */
+.marketinfo {
+    height: 240px;
+}
+
+.marketinfo>div {
+    width: 210px;
+    height: 240px;
+    float: left;
+    margin-right: 40px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #4e4e4e;
+
+}
+
+.marketinfo>.last {
+    margin-right: 0px;
+}
+
+.marketinfo>div>p {
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
