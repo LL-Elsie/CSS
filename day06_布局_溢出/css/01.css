@@ -1,0 +1,10 @@
+/* 每一个页面中都会包含一些公共代码 */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+/* 实际开发中，上面取消默认间距的代码会被下面代码替换掉 */
+body,html,p,h1,h2,h3,h4,h5,h6,input,form,select,textarea,ol,ul,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
