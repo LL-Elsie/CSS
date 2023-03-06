@@ -20,6 +20,16 @@ input {
     border: none;
 }
 
+/* 设置公共的版心 */
+.public {
+    width: 964px;
+    margin: 0 auto;
+}
+/* 取消列表项样式 */
+ul,ol,li {
+    list-style: none;
+}
+
 /* 问题：border:none和border:0之间的区别
         二者都能取消边框，但是none是没有、不设置的意思；0代表的是有值，只是值为0
         浏览器渲染的时候，border:0;会被加载渲染
@@ -29,10 +39,10 @@ input {
 
 /* loogo区域 */
 .logo {
-    width: 964px;
+    /* width: 964px; */
     height: 100px;
     /* 版心居中 */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .logo>img {
@@ -57,3 +67,63 @@ input {
     text-indent: 14px;
 }
 
+/* 通栏导航区域 */
+.layoutNav {
+    height: 60px;
+    background-color: #313131;
+}
+
+.nav {
+    /* width: 964px; */
+    height: 60px;
+    /* margin: 0 auto; */
+}
+
+.nav>li {
+    float: left;
+    font-size: 14px;
+    color: white;
+    line-height: 60px;
+    width: 119px;
+    text-align: center;
+    border-right: 1px solid #4a4a4a;
+}
+
+.nav>.eight {
+    border-right: 0px;
+}
+
+/* 划过效果 */
+.nav>li:hover {
+    background-color: slateblue;
+}
+
+/* banner轮播图区域 */
+.banner>img {
+    width: 100%;
+}
+
+/* 内容区域 */
+.news {
+    height: 242px;
+    background-color: orange;
+}
+
+/* 公司新闻区域 */
+/* 提取一部分公共代码 */
+.news>div {
+    height: 242px;float: left;
+}
+.news>.lef {
+    width: 482px;
+    background-color: red;
+}
+
+.news>.cen {
+    width: 240px;
+    background-color: green;
+}
+.news>.rig {
+    width: 242px;
+    background-color: blue;
+}
