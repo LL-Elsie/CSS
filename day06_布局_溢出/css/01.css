@@ -13,3 +13,47 @@ img {
     display: block;
 }
 
+/* 取消描边 */
+input {
+    outline: none;
+    /* 取消默认边框 */
+    border: none;
+}
+
+/* 问题：border:none和border:0之间的区别
+        二者都能取消边框，但是none是没有、不设置的意思；0代表的是有值，只是值为0
+        浏览器渲染的时候，border:0;会被加载渲染
+            border:none;不会被加载渲染
+*/
+
+
+/* loogo区域 */
+.logo {
+    width: 964px;
+    height: 100px;
+    /* 版心居中 */
+    margin: 0 auto;
+}
+
+.logo>img {
+    float: left;
+    /* 不会作用在父元素身上，因为触发了BFC */
+    margin-top: 32px;
+}
+
+.logo>input {
+    float: right;
+    width: 226px;
+    height: 28px;
+    border: 1px solid gray;
+    margin-top: 40px;
+    /* background-color: #f1f1f1; */
+    /* 插入背景图片 */
+    /* background-image: url(../img/find.png);
+    background-repeat: no-repeat;
+    background-position: right center;  */
+    background: #f1f1f1 url(../img/find.png) no-repeat right center;
+    font-size: 14px;
+    text-indent: 14px;
+}
+
