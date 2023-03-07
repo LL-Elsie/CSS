@@ -238,19 +238,16 @@ ul,ol,li {
 }
 .product>.lef {
     width: 452px;
-    background-color: orange;
 
 }
 
 .product>.cen {
     width: 152px;
-    background-color: aqua;
     margin: 0 52px;
 }
 
 .product>.rig {
     width: 256px;
-    background-color: yellow;
 }
 
 /* 左侧布局大小 */
@@ -265,11 +262,26 @@ ul,ol,li {
 
 .product>.lef ul {
     width: 150px;
-    height: 150px;
-    background-color: deepskyblue;
     float: left;
     margin-top: 14px;
+    color: #767676;
+    font-size: 12px;
+    line-height: 24px;
+    text-indent: 14px;
+
 }
+
+/* 中间区域设置 */
+.product>.cen ul {
+    margin-top: 14px;
+    color: #767676;
+    font-size: 12px;
+    line-height: 24px;
+    text-indent: 14px;
+}
+
+/* 右侧区域设置 */
+
 
 
 
