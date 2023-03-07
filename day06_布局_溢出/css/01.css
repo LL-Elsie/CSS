@@ -220,6 +220,59 @@ ul,ol,li {
     margin-top: 12px;
 }
 
+/* 产品中心区域 */
+.layoutPro {
+    height: 250px;
+    background-color: #e5e5e5;
+}
+
+.product {
+    height: 250px;
+}
+
+/* 左侧中间以及右侧布局 */
+/* 提取公共代码 */
+.product>div {
+    height: 250px;
+    float: left;
+}
+.product>.lef {
+    width: 452px;
+    background-color: orange;
+
+}
+
+.product>.cen {
+    width: 152px;
+    background-color: aqua;
+    margin: 0 52px;
+}
+
+.product>.rig {
+    width: 256px;
+    background-color: yellow;
+}
+
+/* 左侧布局大小 */
+.product .top {
+    /* 边框 */
+    border-bottom: 1px solid gray;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-indent: 12px;
+    color: #656565;
+}
+
+.product>.lef ul {
+    width: 150px;
+    height: 150px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 14px;
+}
+
+
+
 
 
 
