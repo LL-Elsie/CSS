@@ -29,6 +29,12 @@ input {
 ul,ol,li {
     list-style: none;
 }
+/* 取消超链接下划线 */
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
 
 /* 问题：border:none和border:0之间的区别
         二者都能取消边框，但是none是没有、不设置的意思；0代表的是有值，只是值为0
@@ -280,7 +286,34 @@ ul,ol,li {
     text-indent: 14px;
 }
 
-/* 右侧区域设置 */
+/* 网站底部区域 */
+.botNav {
+    height: 82px;
+}
+
+.botNav>.lef {
+    float: left;
+    margin-top: 22px;
+}
+
+.botNav>.rig {
+    float: right;
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-top: 28px;
+
+}
+
+.botNav span {
+    color: gray;
+    font-size: 12px;
+}
+
+.botNav>.rig>img {
+    float: right;
+}
+
+
 
 
 
