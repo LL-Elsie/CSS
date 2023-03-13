@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+        /* 单行文本溢出显示三个圆点 */
+        ul>li {
+            /* 1.必须给宽度 */
+            width: 260px;
+            bottom: 1px solid gray;
+            /* 2.文本不折行显示 */
+            white-space: nowrap;
+            /* 3.溢出隐藏文本 */
+            overflow: hidden;
+            /* 4.超出文本显示三个圆点 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        溢出显示三个圆点：单行（面试题）
+     -->
+    <ul>
+        <li>北京的香山就是一个小小的自然圈，秋天的它是那么的美，如同一处火的海洋</li>
+        <li>北京的香山就是一个小小的自然圈，秋天的它是那么的美，如同一处火的海洋</li>
+        <li>北京的香山就是一个小小的自然圈，秋天的它是那么的美，如同一处火的海洋</li>
+        <li>北京的香山就是一个小小的自然圈，秋天的它是那么的美，如同一处火的海洋</li>
+        <li>北京的香山就是一个小小的自然圈，秋天的它是那么的美，如同一处火的海洋</li>
+        <li>北京的香山就是一个小小的自然圈，秋天的它是那么的美，如同一处火的海洋</li>
+    </ul>
+</body>
+</html>
