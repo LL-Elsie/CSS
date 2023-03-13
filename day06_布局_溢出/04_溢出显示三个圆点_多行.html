@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            border: 2px solid gray;
+            /* 1.设置你的盒子为伸缩性盒子 */
+            display: -webkit-box;
+            /* 2.盒子里面内容的排列方式 */
+            -webkit-box-orient: vertical;
+            /* 3.在第几行显示小圆点 */
+            -webkit-line-clamp: 2;
+            /* 4.使溢出的文本隐藏 */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        注意事项：设置多行文本溢出显示三个小圆点
+            不要设置高度
+     -->
+    <div class="box">你是否沉浸在电视网络上获取全球天气的便利中，却早已遗忘庭前静观云卷云舒的坦然乐趣?</div>
+</body>
+</html>
