@@ -5,12 +5,13 @@
     <title>Document</title>
     <style>
         .red {
-            width: 0px;
-            height: 0px;
-            font-size: 0px;
+            width: 200px;
+            height: 200px;
+            /* font-size: 0px; */
             background-color: red;
             /* display: none; */
             /* visibility: hidden; */
+            opacity: 0;
         }
 
         .green {
@@ -28,7 +29,13 @@
             2)visibility：hidden(隐藏)/ visible(显示);
                             ---隐藏的元素占页面空间，后面的元素没有上去补位置
             3)width:0px; height:0px; ----隐藏元素，不占页面空间，后面元素上去补位置
-                若出现文本，则同时还需设置 font-size:0px;---才会将文本也隐藏掉
+                如果里面出现文本的话，还需配合 font-size:0px;---才会将文本也隐藏掉
+
+            4)透明度 - opacity：0; ---让一个元素变透明，可以隐藏元素，且占页面空间，后面的元素没有上去补位置
+                    取值：0-1之间的小数，保留一位
+                    1代表不透明
+                    0代表透明
+            5)缩放 - transform:scale(0); ---可以隐藏元素，且占页面空间，后面的元素没有上去补位置
 
      -->
 
