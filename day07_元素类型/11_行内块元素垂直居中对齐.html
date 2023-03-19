@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            background-color: orange;
+        }
+        img {
+            /* vertical-align: top; */
+            /* vertical-align: middle; */
+            /* vertical-align: bottom; */
+            /* vertical-align: baseline; */
+            /* 转换成块元素 */
+            display: block;
+        }
+
+        p {
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <!-- 
+        原因：图片下面有三个像素的留白，如何取消掉，产生3px留白的原因是什么
+            原因：图片是行内块元素，默认的对其方式就是以英文文本的基线形式进行对其；所以下面有三个像素的留白
+            取消间距：
+               1） 调整行内块元素的垂直对其方式---该属性只会应用在行内块元素中
+                    vertical-align:   -----取值不为baseline即可，实际开发中应用的middle比较多
+                        baseline--------基线
+                        top-------------顶线
+                        bottom----------底线
+                        middle----------中线
+                2）转换成块元素
+                    display:block
+                    还有没有别的方法？（面试题）
+     -->
+    <!-- <div>
         <img src="img/pic.png" alt="">pppgggllnnmmbbdd
-    </div>
+    </div> -->
+    <img src="img/pic1.png" alt="">
+    <p>我是一个p标签</p>
 </body>
 </html>
