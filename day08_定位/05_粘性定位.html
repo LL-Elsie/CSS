@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            height: 150px;
+            background-color: orange;
+            font-size: 100px;
+            text-align: center;
+            line-height: 150px;
+        }
+        .nav {
+            width: 1300px;
+            background-color: deepskyblue;
+            height: 80px;
+            font-size: 60px;
+            text-align: center;
+            line-height: 80px;
+            margin: 0 auto;
+            /* 添加粘性属性 */
+            position: sticky;
+            top: 0;
+            
+        }
+        .section {
+            height: 3000px;
+            background-color: yellow;
+            font-size: 120px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .footer {
+            height: 150px;
+            background-color: red;
+            font-size: 100px;
+            text-align: center;
+            line-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 粘性定位 -->
+    <div class="header">我是页面的头部区域</div>
+    <div class="nav">我是页面的导航区域</div>
+    <div class="section">我是页面的主体区域</div>
+    <div class="footer">我是页面的尾部区域</div>
+</body>
+</html>
