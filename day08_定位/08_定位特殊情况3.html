@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;padding: 0;
+        }
+
+        .father {
+            border: 10px solid gray;
+        }
+        .red {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 定位 */
+            position: absolute;
+        }
+        .green {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        相对定位不会脱离文档流，不会产生高度塌陷
+        绝对定位和固定定位会脱离文档流，不占页面空间，导致后面元素上去补位置，产生了高度降低的效果，这种效果被称之为高度塌陷
+     -->
+    <div class="father">
+        <div class="red"></div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
