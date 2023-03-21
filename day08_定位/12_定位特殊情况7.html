@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .red {
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        margin:0 auto; 的元素添加绝对定位（固定定位）会让它失效
+        margin:0 auto; 只会对页面中的元素起作用，即对标准文档流里的元素起作用
+     -->
+    <div class="red"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .red {
+            height: 100px;
+            background-color: red;
+            /* 添加定位 */
+            /* position: relative;
+            top: 20px;
+            left: 20px; */
+            position: absolute;
+        }
+        .green {
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        自适应盒子添加定位
+            添加绝对定位（固定定位）：会让自适应失效，但是仍然让盒子处于自适应的状态，需要被文本撑开，文本越多，撑开的距离越大
+     -->
+
+    <div class="red">我是红色标签</div>
+    <div class="green">我这边是绿色标签</div>
+
+</body>
+</html>
