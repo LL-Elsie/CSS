@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         * {
@@ -18,11 +16,20 @@
             line-height: 50px;
         }
         span {
-            
+            /* 转换元素类型 */
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top: 5px solid black;
+            /* 使用定位调整倒三角位置 */
+            position: relative;
+            top: 3px;
         }
     </style>
 </head>
 <body>
+    <!-- 相对定位使用时，仅限于微调 -->
     <div>
         订购房间
         <span></span>
