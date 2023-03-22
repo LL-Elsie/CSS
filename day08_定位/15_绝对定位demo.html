@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         * {
             margin: 0;
             padding: 0;
+        }
+        ul {
+            list-style: none;
         }
         .box {
             width: 500px;
@@ -38,6 +39,19 @@
         .box>.rig {
             right: 0px;
         }
+
+        .box li {
+            width: 20px;
+            height: 10px;
+            background-color: orange;
+            float: left;
+            margin: 5px;
+        }
+        .box>ul {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +63,13 @@
         <p class="lef"><</p>
         <p class="rig">></p>
         <!-- 焦点图 -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
