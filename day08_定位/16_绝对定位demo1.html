@@ -14,16 +14,32 @@
             height: 300px;
             border: 5px solid gray;
             margin: 100px auto;
+            /* 添加定位 */
+            position: relative;
         }
         img {
             width: 100%;
             height: 100%;
+        }
+        .box>p {
+            height: 80px;
+            width: 100%;
+            background-color: rgba(0,0,0,.5);
+            font-size: 30px;
+            color: white;
+            line-height: 80px;
+            /* 需要添加定位使其到达图片上 */
+            /* 变短原因为p标签没有设置宽度，为宽度的自适应，是被文本撑开的 */
+            /* 添加了宽度百分之百未继承父元素 */
+            position: absolute;
+            bottom: 0px;
         }
     </style>
 </head>
 <body>
     <div class="box">
         <img src="img/q.jpg" alt="">
+        <p>你好，欢迎来到这里</p>
     </div>
 </body>
 </html>
