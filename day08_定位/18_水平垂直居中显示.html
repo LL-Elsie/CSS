@@ -12,12 +12,43 @@
             width: 500px;
             height: 300px;
             background-color: red;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .green {
+            width: 300px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 简单的移动盒子 */
+            margin-top: -100px;
+            margin-left: -150px;
         }
     </style>
 </head>
 <body>
     <!-- 
         如何让子元素位于父元素的水平垂直居中位置显示
+        总结：
+            面试题：如何让子元素位于父元素水平垂直居中显示
+                父元素 {
+                    position:relative;
+                }
+                子元素 {
+                    width:3oopx;
+                    height:100px;
+                    background-color: green;
+                    /* 使用绝对定位使得子元素的左上角位于父元素的正中位置*/
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    /* 使用 margin 继续调整位置 */
+                    margin-top: -子元素高度的一半;
+                    margin-left: -子元素宽度的一半;
+                }
      -->
 
     <div class="red">
