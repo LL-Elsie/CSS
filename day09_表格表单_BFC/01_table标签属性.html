@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        创建表格：3*3
+            1)border="1" 边框属性
+            2)width="数值+单位"   宽度属性
+                取值不带单位时默认是像素单位
+                单位可以设置百分比
+            3)height="数值+单位"  高度属性
+                高度取值不带单位的话默认也是像素单位
+                高度单位不能直接设置百分比，因为设置百分比有继承性，父元素body默认是没有高度的
+            4)边框颜色
+                bordercolor
+            5)背景颜色属性
+                bgcolor
+            6)水平对齐方式属性
+                align="left/right/center"
+            7)调整单元格之间的间距
+                cellspacing="数值+单位"
+            8)调整单元格与内容之间的间距
+                cellpadding
+            9)表格内部的横纵线
+                rules="group/rows/cols"
+            10)表格外边框线
+                frame="above(上边框线)/below(下边框线)/lhs(左边框线)/rhs(右边框线)/box(四侧边框线正常显示)"
+     -->
+     <!-- bordercolor="red" bgcolor="yellow" align="center" cellspacing="0" cellpadding="0" rules="group" -->
+    <table border="1" width="500" height="500" frame="rhs">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
