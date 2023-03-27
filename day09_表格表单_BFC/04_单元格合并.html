@@ -5,16 +5,48 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>水平合并：colspan</h1>
+    <h1>水平合并:colspan</h1>
     <table width="200" height="200" border="1">
         <tr>
-            <td>1</td>
-            <td>2</td>
+            <td colspan="2">1</td>
             <td>3</td>
         </tr>
         <tr>
             <td>4</td>
             <td>5</td>
+            <td>6</td>
+        <tr>
+            <td colspan="3">7</td>
+        </tr>
+    </table>
+    <h1>垂直合并:rowspan</h1>
+    <table width="200" height="200" border="1">
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="3">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- <td>4</td> -->
+            <!-- <td>5</td> -->         
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <!-- <td>8</td> -->
+            <td>9</td>
+        </tr>
+    </table>
+    <h3>多个单元格合并</h3>
+    <table width="200" height="200" border="1">
+        <tr>
+            <td colspan="2" rowspan="2">1</td>
+            <!-- <td>2</td> -->
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- <td colspan="2">4</td> -->
+            <!-- <td>5</td> -->
             <td>6</td>
         </tr>
         <tr>
