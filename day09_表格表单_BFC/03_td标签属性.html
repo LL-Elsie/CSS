@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        td标签属性
+
+            1)宽度属性
+                width="数值+单位"
+                只要给一个单元格设置了宽度，会同时影响这一列所有单元格的宽度
+            2）高度属性
+                height="数值+单位"
+                只要给一个单元格设置了高度，会同时影响这一行所有单元格的高度
+            3）背景颜色
+                bgcolor="色值"
+                设置这一个单元格的背景颜色
+            4)文本水平对齐
+                align="left/right/center"
+                只会影响这一个单元格的水平对齐方式
+            5)文本垂直对齐方式
+                valign="top/bottom/middle"
+                只会影响这一个单元格的文本垂直对齐方式
+            补充注意事项：
+                1）如果单元格里面的文本显示的数量是一致的话，则宽度高度是均分的
+                2）如果文本数量不一致的话，则显示的宽度会被撑开
+     -->
+    <table width="300" height="300" border="1">
+        <tr bgcolor="red">
+            <td width="150" height="150" bgcolor="green" align="right" valign="bottom">12</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
