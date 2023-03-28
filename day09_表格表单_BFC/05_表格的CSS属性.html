@@ -13,12 +13,29 @@
             */
             border: 1px solid gray;
             /* 2)调整单元格与单元格之间的间距：cellspacing */
-            border-spacing: 20px;
+            /* 取值为0时，边框是2px */
+            /* border-spacing: 0px; */
+            /* 3)细线边框（1px细线边框/单元格边框合并） */
+            /* 
+                collapse代表边框线的合并
+                separate代表默认值，即边框线不合并
+            */
+            /* border-collapse: collapse; */
+            /* 4)面试题问到的属性 table-layout---表格的布局算法：是否固定单元格宽度 */
+            /* 
+                auto----自动，只要文本过多，单元格就会被撑大，灵活性比较强，但每次都会重新加载计算表格的大小
+                fixed---固定，拥有一个固定的宽度，单元格不会被撑大，固定宽度不用每次加载计算表格的大小，但是不太灵活
+            */
+            table-layout: fixed;
             
         }
         /* td标签属性 */
         td {
             border: 1px solid gray;
+            /* 给单元格设置对应的内边距取消 */
+            padding: 0;
+            /* 隐藏空内容的单元格 */
+            empty-cells: hide;
         }
     </style>
 </head>
@@ -28,7 +45,7 @@
      -->
     <table>
         <tr>
-            <td>1</td>
+            <td></td>
             <td>2</td>
             <td>3</td>
         </tr>
@@ -40,7 +57,7 @@
         <tr>
             <td>7</td>
             <td>8</td>
-            <td>9</td>
+            <td></td>
         </tr>
     </table>
 </body>
