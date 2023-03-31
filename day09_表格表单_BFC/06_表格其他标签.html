@@ -5,10 +5,10 @@
     <title>Document</title>
     <style>
         caption {
-            text-align: right;
+            /* text-align: right; */
             /* 标题位于表格底部 */
-            caption-side: bottom;
-        }
+            caption-side: top;
+        } 
     </style>
 </head>
 <body>
@@ -18,21 +18,23 @@
                 caption ---双标签
                 注意事项：需要放在table标签里面，并且在第一个tr出现的位置之前
             2)表格的标题单元格
+                th标签---替换的是td
+                效果：默认加粗并居中显示，且可以与td同时存在
      -->
     <table width="300" height="300" border="1">
         <caption>课程表</caption>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
         </tr>
         <tr>
-            <td>4</td>
+            <th>4</th>
             <td>5</td>
             <td>6</td>
         </tr>
         <tr>
-            <td>7</td>
+            <th>7</th>
             <td>8</td>
             <td>9</td>
         </tr>
