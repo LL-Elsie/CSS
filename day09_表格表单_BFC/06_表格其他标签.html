@@ -9,6 +9,9 @@
             /* 标题位于表格底部 */
             caption-side: top;
         } 
+        table tr>th {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -20,8 +23,16 @@
             2)表格的标题单元格
                 th标签---替换的是td
                 效果：默认加粗并居中显示，且可以与td同时存在
+            3）表格的行分组标签
+                表格的头部----<thead></thead>
+                表格的主题----<tbody></tbody>
+                表格的尾部----<tfoot></tfoot>
+                使用时注意事项：
+                    1）行分组标签只允许有一个头部有个尾部，但是可以有多个主体
+                    2）如果没有使用行分组标签的话，默认是将所有的tr分配在了对应的tbody里面
+                    3）如果想要使用CSS查找元素的话，则需要注意tbody
      -->
-    <table width="300" height="300" border="1">
+    <table width="300" border="1">
         <caption>课程表</caption>
         <tr>
             <th>1</th>
@@ -32,6 +43,191 @@
             <th>4</th>
             <td>5</td>
             <td>6</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
         </tr>
         <tr>
             <th>7</th>
