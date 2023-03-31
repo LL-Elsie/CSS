@@ -10,7 +10,7 @@
             caption-side: top;
         } 
         table tr>th {
-            background-color: red;
+            /* background-color: red; */
         }
     </style>
 </head>
@@ -31,64 +31,22 @@
                     1）行分组标签只允许有一个头部有个尾部，但是可以有多个主体
                     2）如果没有使用行分组标签的话，默认是将所有的tr分配在了对应的tbody里面
                     3）如果想要使用CSS查找元素的话，则需要注意tbody
+            4）表格的列分组标签
+                <colgroup span="数字"></colgroup>
+                    数字代表的是让多少列划分为一组
+
      -->
     <table width="300" border="1">
         <caption>课程表</caption>
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-        </tr>
-        <tr>
-            <th>4</th>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-        </tr>
+        <colgroup span="1" bgcolor="orange"></colgroup>
+        <colgroup span="2" bgcolor="green"></colgroup>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        </thead>
         <tr>
             <th>4</th>
             <td>5</td>
@@ -234,6 +192,59 @@
             <td>8</td>
             <td>9</td>
         </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th>7</th>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </tfoot>
+        
     </table>
 </body>
 </html>
