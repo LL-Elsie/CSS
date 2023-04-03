@@ -52,10 +52,26 @@
         .tab5 {
             width: 300px;
             height: 100px;
-            border: 1px solid gray;
+            /* border: 1px solid gray; */
+            border-spacing: 0px;
+            border-top: 1px solid gray;
         }
         .tab5 td {
+            /* border: 1px solid gray; */
+            border-bottom: 1px solid gray;
+        }
+        .tab6 {
+            width: 300px;
+            height: 300px;
+            border: 5px solid gray;
+            padding: 10px;
+        }
+        .tab6 td {
             border: 1px solid gray;
+            background-color: deepskyblue;
+        }
+        .tab6 .box {
+            empty-cells: hide;
         }
     </style>
 </head>
@@ -148,6 +164,24 @@
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+    </table>
+    <h1>6-日历表格</h1>
+    <table class="tab6">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="box"></td>
         </tr>
     </table>
 </body>
