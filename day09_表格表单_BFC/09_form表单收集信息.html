@@ -11,10 +11,18 @@
         action="http://www.baidu.com"
             注意事项：如果你后面跟的是互联网地址的话，则需要带互联网协议--- http://
         method="提交方法"
+            铭文提交：都能被看到  get              -------安全性比较低
+            密文提交：以加密形式进行提交  post      -------安全性比较高
+        target="打开方式"
+            _self  自己本身
+            _blank 新窗口
      -->
-    <form action="http://www.baidu.com">
-        输入框：<input type="text"><br>
-        密码框：<input type="password"><br>
+    <form action="http://www.baidu.com" method="get" target="_blank">
+        <!-- name属性就是给元素起一个名字
+            name的取值是用来暂存输入框和密码框里面输入的信息的
+        -->
+        输入框：<input type="text" name="user"><br>
+        密码框：<input type="password" name="upwd"><br>
         <input type="submit">
     </form>
 </body>
