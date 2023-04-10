@@ -14,6 +14,20 @@
                     type="submit"   -----提交按钮
                     type="reset"    -----重置按钮
                     type="button"   -----普通按钮
+                4）图像域按钮
+                    让一个图片作为按钮进行显示，本质就是一个提交按钮---图片为破损文件时，显示的是提交两个字
+                    type="image" 需要使用引入图片的属性（src）完成
+                    <input type="image" src="图片的路径">
+                        如果使用的是图像域按钮的话，地址栏传递的参数x,y，代表的是鼠标的坐标
+                5）文件上传
+                    可以上传多种类型：txt word png jpg excel
+                    基本语法：
+                        <input type="file">
      -->
+    <form action="http://www.baidu.com">
+        用户名：<input type="text"><br>
+        密码框：<input type="password"><br>
+        <input type="image" src="img/pic.png">
+    </form>
 </body>
 </html>
