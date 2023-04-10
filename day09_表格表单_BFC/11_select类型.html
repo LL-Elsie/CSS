@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        select类型：
+            <select>-----------------------------下拉菜单
+                <option>文本</option>------------下拉菜单选项
+                <option>文本</option>
+            </select>
+            注意事项：
+                1）默认加载显示的是第一个选项
+                2）下拉菜单默认情况下只能选择一个
+                3）如果只填写了multiple属性，则会加载显示4个
+            select标签属性
+                size="控制显示多个"
+                multiple="控制选中多个"----属性等于属性值，因此可以简写成 multiple
+            option标签属性
+                value属性：一般情况下，value的取值与option标签中的值一致，方便js获取里面的文本
+                selected属性:默认选中属性
+     -->
+    选择城市：
+     <select multiple>
+        <option value="北京">北京</option>
+        <option>天津</option>
+        <option>上海</option>
+        <option>杭州</option>
+        <option>沈阳</option>
+        <option selected>广州</option>
+        <option selected>西安</option>
+     </select>
+</body>
+</html>
