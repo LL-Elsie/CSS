@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .red {
+            border: 10px solid gray;
+            float: left;
+        }
+        .green {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        BFC概念：块级格式化上下文，触发BFC之后，会形成一个独立的区域，不会受到外界的干扰，也不会干扰到外界
+        触发条件：
+            前提：有一个共同的父级元素
+            1)float:left/right
+            2)overflow:hidden
+            3)display:inline-block/table-cell
+            4)position:absolute/fixed
+        形成独立区域后解决的问题
+            1）外边距重合
+                垂直排列的两个盒子：margin重合了
+            2）使用BFC能让浮动的元素继续参与高度的计算
+     -->
+    <div class="red">
+        <div class="green"></div>
+    </div>
+</body>
+</html>
