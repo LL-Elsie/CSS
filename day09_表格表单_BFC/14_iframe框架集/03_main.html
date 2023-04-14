@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            height: 1500px;
+            background-color: yellow;
+            font-size: 30px;
+            text-align: center;
+        }
+        .header {
+            height: 100px;
+            /* 解决3像素留白问题：转换元素类型 */
+            display: block;
+            border: none;
+            width: 100%;
+        }
+        .footer {
+            height: 200px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        iframe引入浮动框架集
+        基本语法：
+            <iframe src="引入网页的地址"></iframe>
+     -->
+    <!-- 头部 -->
+    <iframe src="01_header.html" class="header"></iframe>
+    <!-- 主体 -->
+    <div>
+        我是主要页面的主体区域
+        看天光云彩，能测阴晴雨雪;漫步林间，能观草长莺飞，枝叶枯荣，可无法细说万物之性。打开电视，轻点鼠标，可知万物原理，可无法身临其境。自然似乎很“近”，又似乎很“远”。在我看来，身临其境，用心感受，即便不知万物原理，自然也并不遥远。
+看来山峻岭，清流激漓，即便你不懂山的形成，你却能用心感受山的巍峨，水的灵动;看万花红遍，绿荫环绕，即便你不懂花的种美，树的生长，你却能用心感受花的甜美，树的奉献;看繁星闪烁银月悬空，即便你不懂星星的距离，你却能感受黑夜的神秘与趣味。由此可见，如若心有自然，心系自然，虽不知万物进化理论，却能感受自然的魅力，自然的灵魂。自然，近在咫尺。
+身临其境，用心感受自然，使人获得身心愉悦。古人有云“读万卷书，不如行万里路。”
+    </div>
+    <!-- 尾部 -->
+    <iframe src="02_footer.html" frameborder="0" class="footer"></iframe>
+</body>
+</html>
