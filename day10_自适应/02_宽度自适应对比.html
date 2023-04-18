@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 宽度自适应 */
+        .red {
+            height: 100px;
+            background-color: red;
+            border-left: 100px solid gray;
+        }
+        /* 宽度100% */
+        .green {
+            height: 100px;
+            width: 100%;
+            background-color: green;
+            border-left: 100px solid gray;
+
+        }
+        .purple {
+            width: 500px;
+            height: 500px;
+            background-color: purple;
+        }
+        .p1 {
+            height: 100px;
+            background-color: yellow;
+            border-left: 100px solid green;
+        }
+        .p2 {
+            width: 100%;
+            height: 100px;
+            background-color: orange;
+            border-left: 100px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="purple">
+        <!-- 自适应宽度 -->
+        <p class="p1"></p>
+        <!-- 宽度100% -->
+        <p class="p2"></p>
+    </div>
+</body>
+</html>

@@ -11,12 +11,38 @@
         span {
             background-color: red;
         }
+        .red {
+            height: 100px;
+            background-color: red;
+        }
+        .green {
+            width: 800px;
+            height: 500px;
+            background-color: green;
+        }
+        .p1 {
+            height: 100px;
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
     <!-- 
         宽度自适应
+            宽度自适应的第一种自适应就是自适应窗口的宽度：块级元素默认占浏览器的一整行
+            宽度自适应的另一种情况：父元素的自适应
+
+        width:auto;
+        width:100%
+        以上两种是不是一样的
+            如果没有添加盒子模型时，二者实现效果一致
+            如果添加了盒子模型，auto+数值=auto;不会把盒子撑大
+                100%+数值>100% 会把盒子撑大
      -->
-    <span>我是一个span标签</span>
+    <span>我是一个普通span标签</span>
+    <div class="red"></div>
+    <div class="green">
+        <p class="p1"></p>
+    </div>
 </body>
 </html>
