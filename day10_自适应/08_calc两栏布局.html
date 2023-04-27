@@ -22,6 +22,18 @@
             height: calc(100% - 100px);
             background-color: green;
         }
+        .lef {
+            width: 200px;
+            height: 100%;
+            background-color: yellow;
+            float: left;
+        }
+        .rig {
+            width: calc(100% - 200px);
+            height: 100%;
+            background-color: orange;
+            float: left;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +41,9 @@
         两栏布局：上下；下面：左右
      -->
     <div class="top"></div>
-    <div class="bottom"></div>
+    <div class="bottom">
+        <div class="lef"></div>
+        <div class="rig"></div>
+    </div>
 </body>
 </html>
