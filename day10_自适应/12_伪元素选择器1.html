@@ -11,9 +11,18 @@
             padding: 0;
         }
         .box {
-            width: 300px;
+            width: 600px;
             border: 10px solid gray;
         }
+        /* 匹配元素内第一行文本---单双冒号都可 */
+        .box:first-line {
+            background-color: red;
+        }
+        /* 匹配元素内第一个字符---单双冒号都可 */
+        .box::first-letter {
+            background-color: yellow;
+        }
+        
     </style>
 </head>
 <body>
