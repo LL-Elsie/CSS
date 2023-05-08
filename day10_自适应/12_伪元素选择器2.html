@@ -10,6 +10,23 @@
             margin: 0;
             padding: 0;
         }
+        div {
+            width: 300px;
+            border: 10px solid gray;
+        }
+        /* 向前追加内容 */
+        div::before {
+            content: "老师说：";
+            color: red;
+            background-color: orange;
+        }
+        /* 向后追加内容 */
+        div::after {
+            content: "(这是一段英文，可忽略)";
+            background-color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -26,6 +43,7 @@
                 选择器::after {
                     content:"";
                 }
+        追加进来的元素类型为行内元素
      -->
     <div>
         在大大的公园里挖呀挖呀挖，挖到一个小可爱
