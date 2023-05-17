@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 10px solid gray;
+        }
+
+        .red {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+
+        .yellow {
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .wnqc:after {
+            /*必须值，基本语法*/
+            content: "";
+            /*追加进来是行内元素*/
+            display: block;
+            /*清除浮动带来的影响*/
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        解决高度塌陷（最优方法）：
+            使用伪元素的方法来完成解决高度塌陷的问题
+                .wnqc:after {
+                    /*必须值，基本语法*/
+                    content:"";
+                    /*追加进来是行内元素*/
+                    display:block;
+                    /*清除浮动带来的影响*/
+                    clear:both;
+                    width:0px;
+                    height:0px;
+                    font-size:0px;
+                    overflow:hidden;
+                    visibility:hidden;
+                    opacity:0;
+                }
+            
+     -->
+    <div class="box wnqc">
+        <div class="red"></div>
+    </div>
+    <div class="yellow"></div>
+</body>
+
+</html>
