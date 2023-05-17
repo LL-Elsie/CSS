@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 10px solid gray;
+            overflow: hidden;
+        }
+        .red {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .yellow {
+            height: 100px;
+            background-color: yellow;
+        }
+        /* 补位元素类型必须为块级元素，行内元素清除不了浮动 */
+         /* .hh{
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 
+        解决高度塌陷：
+            3）前提：父元素里面只有一个子元素或者多个子元素都浮动
+                1）自己悄悄补一个元素，给这个补位的元素清除浮动（补位元素必须为块级元素）
+                2）给父元素添加overflow:hidden------会触发BFC机制，会让浮动的元素继续参与高度计算，用于解决高度塌陷问题
+     -->
+    <div class="box">
+        <div class="red"></div>
+        <!-- <div class="hh"></div> -->
+    </div>
+    <div class="yellow"></div>
+</body>
+</html>
