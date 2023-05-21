@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +11,32 @@
             margin: 0;
             padding: 0;
         }
+
         .box {
             border: 10px solid gray;
             /* 使用overflow本质：溢出隐藏 */
             overflow: hidden;
         }
+
         .red {
             width: 200px;
             height: 200px;
             background-color: red;
             float: left;
         }
+
         .yellow {
             height: 100px;
             background-color: yellow;
         }
+
         /* 补位元素类型必须为块级元素，行内元素清除不了浮动 */
-         /* .hh{
+        /* .hh{
             clear: both;
         } */
     </style>
 </head>
+
 <body>
     <!-- 
         解决高度塌陷：
@@ -44,4 +50,5 @@
     </div>
     <div class="yellow"></div>
 </body>
+
 </html>
