@@ -12,16 +12,17 @@
             基本语法：<video src="视频路径"></video>
             标签属性：
                 1）src---------------------------路径
-                2）controls="controls"-------（controls）--------控件点击          属性等于属性值时，可以直接写属性
-                3）loop="loop"---------------（loop） -----------循环播放（无限次播放）
+                2）controls="controls"-------（controls）-----------控件点击          属性等于属性值时，可以直接写属性
+                3）loop="loop"---------------（loop） --------------循环播放（无限次播放）
                 4）autoplay="autoplay"-------（autoplay）-----------自动播放
-                5）muted="muted"-------------（muted）-------------声音禁用
+                5）muted="muted"-------------（muted）--------------声音禁用
+                6）poster="poster"----------------------------------缓存加载
             默认情况下视频只能播放一遍
             注意事项：默认情况下，浏览器已经把自动播放的属性给禁用掉了
                 如果想要实现自动播放的话，则可以添加muted的属性，通过禁用声音来实现视频的自动播放
      -->
     
-    <video src="img/我以为1.mp4" controls loop autoplay muted></video>
+    <video src="img/我以为1.mp4" controls poster="poster"></video>
 
 </body>
 </html>
