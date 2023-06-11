@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- 
         增强型表单：
@@ -44,17 +46,40 @@
             type="datetime-local"
         10）电话拨号盘
             type="tel"
+        11）电子邮箱
+            type="email"
+            电子邮箱注意事项：
+                如果没有输入电子邮箱，会默认进行跳转，直接验证通过
+                如何拦截（必须输入）：required---------验证不能为空
+
+                如果输入的话，必须按照正确的邮箱格式进行输入；若输入不完整的话，则不能跳转，并且有错误提示
+
+                默认情况下，电子邮箱不能上传多个
+                    -------上传多个电子邮箱：需要使用 multiple
+
+                
      -->
 
-    颜色拾取器：<input type="color"><br>
-    搜索框：<input type="search"><br>
-    数值类型：<input type="number" min="0" max="100" step="5" value="10"> <br>
-    滑块类型：<input type="range" min="0" max="100" step="10" value="10"> <br>
-    日期：<input type="date"> <br>
-    月份：<input type="month"><br>
-    周期：<input type="week"><br>
-    时间：<input type="time"><br>
-    本地时间：<input type="datetime-local"> <br>
-    电话拨号盘：<input type="tel">
+    <h1>H5新增的表单控件</h1>
+    <form action="http://www.baidu.com">
+        <!-- 颜色拾取器：<input type="color"><br>
+        搜索框：<input type="search"><br>
+        数值类型：<input type="number" min="0" max="100" step="5" value="10"> <br>
+        滑块类型：<input type="range" min="0" max="100" step="10" value="10"> <br>
+        日期：<input type="date"> <br>
+        月份：<input type="month"><br>
+        周期：<input type="week"><br>
+        时间：<input type="time"><br>
+        本地时间：<input type="datetime-local"> <br>
+        电话拨号盘：<input type="tel"><br> -->
+
+        输入框：<input type="text"><br>
+        输入电子邮箱：<input type="email" required multiple><br>
+        <input type="submit">
+    
+
+
+    </form>
 </body>
+
 </html>
