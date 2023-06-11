@@ -57,7 +57,14 @@
                 默认情况下，电子邮箱不能上传多个
                     -------上传多个电子邮箱：需要使用 multiple 属性完成，多个电子邮箱输入的时候，需要使用英文逗号完成分割
 
-                
+        12）地址栏
+            type="url"    
+                验证的时候：必须携带协议-必须出现的 
+                    http:// fit:// 本地的绝对路径（c://html/img/pic/pic.png）
+                注意事项：
+                    默认情况下：为空验证直接通过，如何拦截验证不能为空呢
+                        required
+                    输入的时候，想要输入必须按照绝对路径进行输入
      -->
 
     <h1>H5新增的表单控件</h1>
@@ -74,9 +81,10 @@
         电话拨号盘：<input type="tel"><br> -->
 
         输入框：<input type="text"><br>
-        输入电子邮箱：<input type="email" required multiple><br>
+        <!-- 输入电子邮箱：<input type="email" required multiple><br> -->
+        地址栏信息：<input type="url" required><br>
         <input type="submit">
-    
+
 
 
     </form>
