@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <input type="text" disabled><br>
+    <input type="text" readonly><br>
+    <input type="text" placeholder="请输入用户名"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text" autofocus><br>
+    <input type="text"><br>
+    <input type="text"><br> -->
+    <form action="http://www.baidu.com" autocomplete="off">
+        输入框：<input type="text" name="user"><br>
+        密码框：<input type="password" name="upwd" pattern="[0-9][A-Z]{3}"><br>
+        模糊搜索：<input type="text" list="car">
+            <datalist id="car">
+                <option value="宝马">宝马</option>
+                <option value="宝骏">宝骏</option>
+                <option value="奔驰">奔驰</option>
+                <option value="保时捷">保时捷</option>
+                <option value="路虎">路虎</option>
+
+            </datalist>
+        <input type="submit">
+    </form>
     <!-- 
         新增表单中的标签属性
             1.min max step
@@ -17,6 +40,37 @@
             2.value-------值
                 给你一个值让你显示
                 如果应用在输入框或者密码框时，将这个值显示在输入框里面并且占位
+                如果应用在按钮上面，能修改按钮上面的提示文本
+                应用在你的单选框或者复选框中，主要是为了方面js获取值
+                应用在下拉菜单选项option标签中，也是为了方便js获取对应的值
+            3.禁用属性（H4）：
+                禁止使用 ---disabled
+            4.只读属性（H4）：
+                只允许看，不允许改----readonly
+            5.验证不能为空属性：
+                required
+            6.提交多个邮箱
+                multiple
+            7.提示文本属性：
+                placeholder
+            8.获取焦点属性：自动获取焦点属性
+                autofocus
+            9.取消提示文本自动补全样式---该属性需要添加在form标签上
+                autocomplate
+                    on--------开启提示信息
+                    off-------关闭提示信息
+                    在实际开发时，经常使用的是off
+            10.按照格式输入验证信息
+                正则：代表一种规则，按照这个规则进行验证，如果符合这个规则的话，则实现通过验证的效果
+                pattern="正则表达式"
+                [0-9][A-Z]{3} ---------- [0-9][A-Z][A-Z][A-Z]
+            11.list属性：
+                列表项属性---主要应用于列表清单，做一个模糊搜索的效果
+                基本语法：
+                    <input type="text" list="值">
+                    <datalist id="值">
+                        <option value="文本">文本</option>
+                    </datalist>
      -->
 </body>
 </html>
