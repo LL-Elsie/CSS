@@ -12,11 +12,23 @@
             background-color: red;
         } */
         /* 2.E[属性] */
-        span[class] {
+        /* 匹配的是span标签中带有class属性的元素 */
+        /* span[class] {
             background-color: orange;
-        }
-        p[id] {
+        } */
+        /* 匹配的是p标签中带有id属性的元素 */
+        /* p[id] {
             background-color: deepskyblue;
+        } */
+        /* 3.[属性="属性值"] */
+        /* 匹配的是带有class属性并且取值为sp1的元素 */
+        /* [class="sp1"] {
+            background-color: aqua;
+        } */
+        /* E[属性="属性值"] */
+        /* 匹配的是span标签中带有class属性，并且属性值为sp1的元素 */
+        span[class="sp1"] {
+            background-color: yellow;
         }
 
     </style>
