@@ -7,10 +7,14 @@
     <style>
         /* [属性^="值"] */
         /* 匹配的是带有class属性，并且属性值是以s开头的元素 */
-        [class^="s"] {
+        /* [class^="s"] {
             background-color: orange;
         }
         [class^="b"] {
+            background-color: aqua;
+        }  */
+        /* [属性$="值"] */
+        [class$="1"] {
             background-color: aqua;
         }
     </style>
@@ -22,6 +26,7 @@
             <div class="box">
                 [class^="b"]
         6）[属性$="值"]
+            含义：匹配属性值中以对应的值为结尾的元素
         7）[属性~="值"]
         8）[属性*="值"]
         9）[属性!="值"]
