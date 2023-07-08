@@ -14,8 +14,15 @@
             background-color: aqua;
         }  */
         /* [属性$="值"] */
-        [class$="1"] {
+        /* [class$="1"] {
             background-color: aqua;
+        }
+        [class$="x"] {
+            background-color: orange;
+        } */
+        /* [属性*="值"] */
+        [class*="o"] {
+            background-color: orange;
         }
     </style>
 </head>
@@ -29,6 +36,9 @@
             含义：匹配属性值中以对应的值为结尾的元素
         7）[属性~="值"]
         8）[属性*="值"]
+            含义：属性值中包含了这个值的元素
+            <div class="bobo">我是一个普通的div元素</div>
+            [class*="ob"]
         9）[属性!="值"]
      -->
     <span class="sp1">我是一个普通的span标签</span>
