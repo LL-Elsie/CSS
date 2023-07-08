@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* [属性^="值"] */
+        /* 匹配的是带有class属性，并且属性值是以s开头的元素 */
+        [class^="s"] {
+            background-color: orange;
+        }
+        [class^="b"] {
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <!-- 
         5）[属性^="值"]
+            含义：匹配属性值中以对应的这个值开始的元素
+            <div class="box">
+                [class^="b"]
         6）[属性$="值"]
         7）[属性~="值"]
         8）[属性*="值"]
         9）[属性!="值"]
      -->
+    <span class="sp1">我是一个普通的span标签</span>
+    <span class="sp1">我是一个普通的span标签</span>
+    <span class="sp2">我是一个普通的span标签</span>
+    <div class="sp1">我是一个普通的div元素</div>
+    <div class="box">我是一个普通的div元素</div>
+    <div class="bobo">我是一个普通的div元素</div>
+    <p class="p1">我是一个普通的p标签</p>
+    <p id="p2">我是一个普通的p标签</p>
+    <p id="p3">我是一个普通的p标签</p>
+    <h1 class="box">我是一个普通的一级标签</h1>
+    <h1 class="bobo">我是一个普通的一级标签</h1>
+    <h1>我是一个普通的一级标签</h1>
 </body>
 </html>
