@@ -15,12 +15,19 @@
             background-color: yellow;
         } */
         /* 找到最后一个li */
-        li:last-child {
+        /* li:last-child {
             background-color: orange;
-        }
+        } */
         /* 找到ol里面最后一个li */
-        ol>li:last-child {
+        /* ol>li:last-child {
             background-color: green;
+        } */
+        /* 匹配第几个li元素 */
+        /* li:nth-child(4) {
+            background-color: green;
+        } */
+        li:nth-child(odd) {
+            background-color: red;
         }
     </style>
 </head>
@@ -32,14 +39,23 @@
             选择器:last-child{}
          3）匹配元素内部，第几个子元素
             选择器:nth-child(参数){}
+                注意事项：参数为一个数值，则代表第几个子元素
+                        如果想要匹配对应的奇数或者是偶数，如何实现？
+                        n==number数值
+                        2n-----偶数
+                        2n+1/2n-1---奇数
+                        奇数和偶数关键词
+                            odd----奇数
+                            even---偶数
+                        还可以按照其他规律进行匹配，如3n、4n、5n等等
      -->
     <ul>
-        <li>我是无序列表里面的li</li>
-        <li>我是无序列表里面的li</li>
-        <li>我是无序列表里面的li</li>
-        <li>我是无序列表里面的li</li>
-        <li>我是无序列表里面的li</li>
-        <li>我是无序列表里面的li</li>
+        <li>我是无序列表里面的li1</li>
+        <li>我是无序列表里面的li2</li>
+        <li>我是无序列表里面的li3</li>
+        <li>我是无序列表里面的li4</li>
+        <li>我是无序列表里面的li5</li>
+        <li>我是无序列表里面的li6</li>
     </ul>
     <ol>
         <li>我是有序列表里面的li</li>
