@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 找到第一个li */
+        /* li:first-child {
+            background-color: orange;
+        } */
+        /* 找到ul里面的第一个li */
+        /* ul>li:first-child {
+            background-color: yellow;
+        } */
+        /* 找到最后一个li */
+        li:last-child {
+            background-color: orange;
+        }
+        /* 找到ol里面最后一个li */
+        ol>li:last-child {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1）匹配元素内部，第一个子元素
+            选择器:first-child{}
+         2）匹配元素内部，最后一个子元素
+            选择器:last-child{}
+         3）匹配元素内部，第几个子元素
+            选择器:nth-child(参数){}
+     -->
+    <ul>
+        <li>我是无序列表里面的li</li>
+        <li>我是无序列表里面的li</li>
+        <li>我是无序列表里面的li</li>
+        <li>我是无序列表里面的li</li>
+        <li>我是无序列表里面的li</li>
+        <li>我是无序列表里面的li</li>
+    </ul>
+    <ol>
+        <li>我是有序列表里面的li</li>
+        <li>我是有序列表里面的li</li>
+        <li>我是有序列表里面的li</li>
+        <li>我是有序列表里面的li</li>
+        <li>我是有序列表里面的li</li>
+        <li>我是有序列表里面的li</li>
+    </ol>
+</body>
+</html>
