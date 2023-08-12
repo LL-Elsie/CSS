@@ -25,7 +25,11 @@
             background-color: orange;
         } */
         /* [属性~="值"] */
-        [class~="spp"] {
+        /* [class~="spp"] {
+            background-color: yellow;
+        } */
+        /* [属性|="值"] */
+        [class|="bobo"] {
             background-color: yellow;
         }
     </style>
@@ -44,7 +48,10 @@
             含义：属性值中包含了这个值的元素
             <div class="bobo">我是一个普通的div元素</div>
             [class*="ob"]
-        9）[属性!="值"]
+        9）[属性|="值"]
+            含义：匹配的是页面中元素名字以对应父value值或者是value-值开头的元素
+            <div class="bobo-1">
+            [class|="bobo"]
      -->
     <span class="sp1">我是一个普通的span标签</span>
     <span class="sp1 spp">我是一个普通的span标签</span>
@@ -56,7 +63,7 @@
     <p id="p2">我是一个普通的p标签</p>
     <p id="p3">我是一个普通的p标签</p>
     <h1 class="box">我是一个普通的一级标签</h1>
-    <h1 class="bobo">我是一个普通的一级标签</h1>
-    <h1>我是一个普通的一级标签</h1>
+    <h1 class="bobo-1">我是一个普通的一级标签</h1>
+    <h1 class="bobo-box">我是一个普通的一级标签</h1>
 </body>
 </html>
