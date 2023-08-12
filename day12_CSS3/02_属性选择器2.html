@@ -20,9 +20,13 @@
         [class$="x"] {
             background-color: orange;
         } */
-        /* [属性*="值"] */
-        [class*="o"] {
+        /* [属性*="值"] */    
+        /* [class*="o"] {
             background-color: orange;
+        } */
+        /* [属性~="值"] */
+        [class~="spp"] {
+            background-color: yellow;
         }
     </style>
 </head>
@@ -35,6 +39,7 @@
         6）[属性$="值"]
             含义：匹配属性值中以对应的值为结尾的元素
         7）[属性~="值"]
+            含义：属性值是一个以列表形式进行显示的，可以有多个取值，匹配的是多个值中的一个值
         8）[属性*="值"]
             含义：属性值中包含了这个值的元素
             <div class="bobo">我是一个普通的div元素</div>
@@ -42,9 +47,9 @@
         9）[属性!="值"]
      -->
     <span class="sp1">我是一个普通的span标签</span>
-    <span class="sp1">我是一个普通的span标签</span>
+    <span class="sp1 spp">我是一个普通的span标签</span>
     <span class="sp2">我是一个普通的span标签</span>
-    <div class="sp1">我是一个普通的div元素</div>
+    <div class="sp1 spp">我是一个普通的div元素</div>
     <div class="box">我是一个普通的div元素</div>
     <div class="bobo">我是一个普通的div元素</div>
     <p class="p1">我是一个普通的p标签</p>
