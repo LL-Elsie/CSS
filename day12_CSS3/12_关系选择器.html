@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box相邻的一个兄弟 */
+        /* .box+div {
+            background-color: red;
+        } */
+        /* .box+h1 {
+            background-color: orange;
+        } */
+        .box~h1 {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div>我是一个div</div>
+    <div class="box">我是一个div</div>
+    <div>我是一个div</div>
+    <h1>我是一个一级标题</h1>
+    <h1>我是一个一级标题</h1>
+    <h1>我是一个一级标题</h1>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <!-- 
+        关系选择器：
+            层级关系选择器
+            1）后代选择器
+                基本语法： 选择器1 选择器2{样式规则}
+                符号：空格
+            2）子代选择器
+                基本语法： 选择器1>选择器2{样式规则}
+                符号：>
+            3）匹配相邻的一个兄弟（向后匹配）
+                基本语法： 选择器1+选择器2{样式规则}
+                符号：+
+                注意：匹配的是相邻的，则只能找后面的相邻的一个兄弟
+            4）匹配后面所有的兄弟（向后匹配）
+                基本语法： 选择器1~选择器2{样式规则}
+                符号：~
+     -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 匹配Li,除了第三个之外剩下所有的都匹配到 */
+        /* 如何找到第三个：    :nth-child(3)
+            排除掉： :not(:nth-child(3)){}
+        */
+        /* li:nth-child(3){
+            background-color: red;
+        } */
+        li:not(:nth-child(3)) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        否定伪类：排除掉，即除了谁之外的所有内容
+        基本语法： :not()  小括号里面的内容是被排除掉的
+     -->
+    <ul>
+        <li>我是无序列表里面的Li</li>
+        <li>我是无序列表里面的Li</li>
+        <li>我是无序列表里面的Li</li>
+        <li>我是无序列表里面的Li</li>
+        <li>我是无序列表里面的Li</li>
+        <li>我是无序列表里面的Li</li>
+    </ul>
+</body>
+</html>

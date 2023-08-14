@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            目标伪类选择器：谁获取到了焦点了/锚点了，实现对应的样式改变
+                必须配合锚点链接实现效果
+            基本语法：选择器:target{样式规则}
+        */
+        li:target{
+            background-color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#box1">第一章：归国</a>
+    <a href="#box2">第二章：联姻</a>
+    <ul>
+        <li id="box1">
+            <b>第一章：归国</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae dolores aspernatur iste, reiciendis adipisci, obcaecati minus, iusto quae dolore illo ipsam autem asperiores ad facere. Incidunt vero esse dolorum.
+            Quae quaerat necessitatibus fugiat in adipisci, at, id inventore, corporis pariatur eveniet qui quis libero tempora. Itaque blanditiis ea nisi consectetur, deleniti qui, laborum eaque ipsa libero, mollitia similique quam?
+            Impedit sunt nobis accusamus. Et, qui pariatur ab maxime nihil quaerat fugiat eius iste perspiciatis alias suscipit, ratione quidem placeat id, ut culpa hic. Magni asperiores labore repudiandae eligendi quas?
+            Odio porro veritatis itaque atque nobis, hic incidunt fugiat minima fuga delectus excepturi suscipit consectetur natus dolor inventore. Ipsa, possimus. Molestias minus quasi reprehenderit unde, voluptatem reiciendis et accusamus quod!
+        </li>
+        <li id="box2">
+            <b>第二章：联姻</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae dolores aspernatur iste, reiciendis adipisci, obcaecati minus, iusto quae dolore illo ipsam autem asperiores ad facere. Incidunt vero esse dolorum.
+            Quae quaerat necessitatibus fugiat in adipisci, at, id inventore, corporis pariatur eveniet qui quis libero tempora. Itaque blanditiis ea nisi consectetur, deleniti qui, laborum eaque ipsa libero, mollitia similique quam?
+            Impedit sunt nobis accusamus. Et, qui pariatur ab maxime nihil quaerat fugiat eius iste perspiciatis alias suscipit, ratione quidem placeat id, ut culpa hic. Magni asperiores labore repudiandae eligendi quas?
+            Odio porro veritatis itaque atque nobis, hic incidunt fugiat minima fuga delectus excepturi suscipit consectetur natus dolor inventore. Ipsa, possimus. Molestias minus quasi reprehenderit unde, voluptatem reiciendis et accusamus quod!
+        </li>
+    </ul>
+</body>
+</html>
