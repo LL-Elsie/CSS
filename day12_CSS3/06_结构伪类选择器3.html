@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border: 5px solid gray;
+            float: left;
+            margin: 10px;
+        }
+        /* 空伪类 */
+        /* div:empty {
+            background-color: green;
+        } */
+        /* 只有一个子元素的元素，匹配子元素 */
+        /* p:only-child{
+            background-color: red;
+        } */
+        /* 选择一个元素是它的上级元素的唯一 一个相同类型的子元素 */
+        p:only-of-type {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1)空伪类
+            匹配一个元素中是空的，没有任何文本、没有任何标签
+            选择器:empty{样式规则}
+        2)匹配只有一个子元素的元素，对子元素进行修饰
+            选择器:only-child{样式规则}
+        3)选择一个元素是它的上级元素的唯一 一个相同类型的子元素
+            选择器:only-of-type{样式规则}
+        
+     -->
+    <div>
+        
+    </div>
+    <div></div>
+    <div>
+        <p>我是div里面的p</p>
+    </div>
+    <div>
+        <p>我是div里面的p标签</p>
+        <p>我是div里面的p标签</p>
+    </div>
+    <div>
+        <p>我是div里面的p</p>
+        <b>我是div里面的b</b>
+    </div>
+</body>
+</html>
