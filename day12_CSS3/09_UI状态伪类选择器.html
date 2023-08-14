@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 内部样式表 -->
+    <style>
+        /* 匹配可用元素 */
+        /* input:enabled {
+            background-color: red;
+        } */
+        /* 匹配禁用元素 */
+        /* input:disabled {
+            background-color: orange;
+        } */
+        /* 匹配焦点元素 */
+        input:focus {
+            background-color: green;
+        }
+        /* 如何修改单选框和复选框默认选中的状态 */
+        /* 步骤：取消默认样式，设置自己的样式，修改选中状态
+            应用场景：购物车
+        */
+        [name="sex"] {
+            /* 取消默认样式 */
+            appearance: none;
+            /* 设置自己的样式 */
+            width: 20px;
+            height: 20px;
+            border: 1px solid gray;
+            /* 变成圆形 */
+            border-radius: 50%;
+        }
+        /* 找到sex添加选中效果 */
+        [name="sex"]:checked {
+            background-color: orange;
+        }
+        /* 修改选中文本的样式
+            只能修改背景颜色和文本颜色
+        */
+        p::selection {
+            background-color: red;
+            color: blue;
+            /* 下面修改不生效 */
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 修改选中文本的样式 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex adipisci perspiciatis ut, consectetur, nisi dolore fugiat, ullam sit autem commodi illo molestiae iusto ducimus expedita hic ipsum repellendus animi.
+    Unde impedit incidunt temporibus ullam repellendus molestiae error harum. Eum saepe asperiores nobis exercitationem reprehenderit, dolor unde qui, totam aut, quaerat vel expedita nisi laboriosam velit cum perspiciatis. Nemo, maxime!
+    Esse fugit suscipit expedita vero architecto id at recusandae eum nam possimus illo, doloremque libero dolore earum incidunt quibusdam est eius dolores! Perferendis, blanditiis. Vitae illo quo eveniet doloremque magni!</p>
+    <!-- 表单控件 -->
+    用户名：<input type="text" autofocus><br>
+    密码框：<input type="password"><br>
+    电子邮箱：<input type="email"><br>
+    性别：<input type="radio" name="sex">男
+            <input type="radio" name="sex">女
+            <br>
+    兴趣爱好：<input type="checkbox">篮球
+            <input type="checkbox">足球
+            <br>
+    <input type="submit">
+    <input type="reset" disabled>
+
+</body>
+</html>
