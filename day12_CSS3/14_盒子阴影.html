@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 10px solid gray;
+            margin: 100px auto;
+            /* 盒子阴影属性 */
+            /* 注意事项：默认情况下，盒子阴影是黑色的 */
+            /* box-shadow: 30px 30px 5px 40px blue inset; */
+            box-shadow: 30px 30px blue,-30px -30px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- 
+        盒子阴影
+            属性：box-shadow
+            属性取值：box-shadow:h-shadow v-shadow blur size color inset;
+            h-shadow-----水平方向上的阴影位置（*）
+                正数：向右走
+                负数：向左走
+            v-shadow-----垂直方向上的阴影位置（*）
+                正数：向下走
+                负数：向上走
+            blur---------阴影的模糊距离
+            size---------延展半径
+            color--------阴影的颜色
+            inset--------内阴影设置，不设置则代表外阴影
+            示例：box-shadow: 30px 30px 5px 40px blue inset;
+        问题：如何添加多个方向的阴影---取值同文本阴影一致，中间使用逗号分隔开
+        示例：
+        box-shadow: 30px 30px blue,-30px -30px yellow;
+     -->
+</body>
+</html>

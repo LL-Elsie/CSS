@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 10px solid gray;
+            /* 正方形圆角设置 */
+            /* 取值为实际总宽度的一半时，会变成一个正圆 */
+            /* 正方形变成一个圆形，可以直接设置取值为50% */
+            border-radius: 50%;
+        }
+        .box2 {
+            width: 500px;
+            height: 200px;
+            border: 10px solid gray;
+            margin-top: 20px;
+            /* 长方形圆角设置 */
+            /* 注意事项：实际开发时，长方形盒子设置圆角时，不会给百分比取值，除非想实现椭圆的效果 */
+            /* 要想实现操场跑道效果，则取值要给出实际数值-----（高度+边框）的一半 */
+            border-radius: 110px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 正方形 -->
+    <div class="box1"></div>
+    <!-- 长方形 -->
+    <div class="box2"></div>
+</body>
+</html>

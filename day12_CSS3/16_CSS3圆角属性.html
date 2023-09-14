@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 圆角设置 */
+            /* border-radius: 30px 50px 60px 100px; */
+            /* border-radius: 30px 0 0 0; */
+            /* border-bottom-left-radius: 100px; */
+            /* 水平半径和垂直半径 */
+            /* border-radius: 30px/100px; */
+            border-radius: 20px 30px 40px 50px/100px 80px 60px 40px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- 
+        圆角属性：圆角边框、边框圆角、倒圆角
+        属性：border-radius
+        属性取值：数值px
+            取值：v1;--------------实现四个方向的圆角
+            取值：v1 v2;-----------实现四个方向的圆角显示，v1代表左上右下，v2代表右上左下
+            取值：v1 v2 v3;--------实现四个方向的圆角显示，v1代表左上，v2代表右上左下，v3代表右下
+            取值：v1 v2 v3 v4;-----实现四个方向的圆角显示，v1代表左上，v2代表右上，v3代表右下，v4代表左下
+        规律：从左上角开始，顺时针旋转记忆
+            设置一个角的时候：border-radius: 30px 0 0 0;
+
+        单角属性：只设置一个角  
+            border-垂直方向-水平方向-radius
+            垂直：top、bottom
+            水平：left、right
+                border-top-left-radius---------左上
+                border-top-right-radius--------右上
+                border-bottom-left-radius------左下
+                border-bottom-right-radius-----右下
+         
+                
+        涉及到知识点：
+            圆角的水平半径和垂直半径
+            注意：水平半径和垂直半径设置的时候，只会应用在复合属性上（border-radius），不会应用在单角属性上
+            border-radius:x/y;
+                x-------所有角的水平半径
+                y-------所有角的垂直半径
+            示例：
+                border-radius:x1 x2 x3 x4/y1 y2 y3 y4;
+                    /前面代表的是每一个角的水平半径
+                    /后面代表的是每一个角的垂直半径
+     -->
+</body>
+</html>
