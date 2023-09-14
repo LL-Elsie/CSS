@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 30px;
+            /* 阴影属性 */
+            /* 默认影子颜色为黑色 */
+            text-shadow: 20px 20px 2px red,-10px -30px 5px blue,-10px -10px orange,10px -10px yellow;
+        }
+    </style>
 </head>
 <body>
     <!-- 
         文本阴影
             属性：text-shadow
             取值：h-shadow v-shadow blur color
-
+            h-shadow-----水平反向上的阴影位置
+                正数：向右走
+                负数：向左走
+            v-shadow-----垂直反向上的阴影位置
+                正数：向下走
+                负数：向上走
+            blur---------阴影的模糊距离
+            color--------阴影的颜色
+        问题：能不能同时添加多个方向的阴影
+            如：text-shadow: 20px 20px 2px red,-10px -30px 5px blue;
+        注意事项：前面的影子在上面，后面的影子在下面
      -->
+    <p>我是一个普通的p标签</p>
 </body>
 </html>
