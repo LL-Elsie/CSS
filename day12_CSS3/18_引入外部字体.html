@@ -2,15 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 引入外部字体 */
+        @font-face {
+            font-family: 铁牛;
+            src: url(outFont/ARDECODE.ttf);
+        }
+        div {
+            font-size: 20px;
+            /* 修饰字体 */
+            font-family: 铁牛;
+        }
+    </style>
 </head>
 <body>
+    <div>我是一个普通的div,铁牛哥哥的电话是:137****2473</div>
+    <p>我是一个普通的div,铁牛哥哥的电话是:137****2473</p>
     <!-- 
         引入外部字体：
-            原因：浏览器里面有一部分字体不智齿不显示，但是我们想要让它显示出来则需要引入外部字体
+            原因：浏览器里面有一部分字体不支持不显示，但是我们想要让它显示出来则需要引入外部字体
         如何引入外部字体：
+            CSS基本语法
+            @font-face {
+                font-family:你自己的名字;
+                src:url(字体路径);
+            }
      -->
 </body>
 </html>
