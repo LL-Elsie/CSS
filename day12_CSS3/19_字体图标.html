@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 先引入CSS文件 -->
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            font-size: 100px;
+            color: aqua;
+
+        }
+        .box:hover {
+            color: red;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <!-- 
         字体图标：
             默认的是一个图，但是遵循所有的字体属性，字体图标经常应用在移动端布局上面
             字体图标也被称为iconfont字体图标
-        如何引入如何使用icon字体图标
+        如何引入如何使用icon字体图标（提示：你的font文件夹需要放在站点里面）
+            1）在你使用的文件中，引入font文件夹里面的iconfont.css
+                需要使用link进行引入
+            2）给对应元素起对应名字即可：icon名字
+                <div class="box iconfont icon-***">
      -->
+    <div class="box iconfont icon-29"></div>
 </body>
 </html>
