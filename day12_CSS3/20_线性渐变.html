@@ -11,7 +11,11 @@
             height: 500px;
             border: 10px solid gray;
             /* 渐变 */
-            background: linear-gradient(to bottom,red,green,blue);
+            /* background: linear-gradient(to bottom,red,green,blue); */
+            /* background: linear-gradient(to left,red,green,blue); */
+            /* 到达某一个角，沿着某一个角进行渐变 */
+            /* background: linear-gradient(to top left,red,green,blue); */
+            /* 只 */
         }
     </style>
 </head>
@@ -23,7 +27,21 @@
         to 方向词：到达某一个方向
             to top:从下面开始到达上面
             to bottom:从上面开始到达下面
-            
+            to left:从右侧开始到达左侧
+            to right:从左侧开始到达右侧
+        col1,col2,col3------渐变的颜色
+            col1:开始的颜色
+            col2:中间的颜色
+            col3:结束的颜色
+
+
+        主要研究的方向词
+            （1）to 方向词;------------到达某一个方向
+            （2）to 方向词1 方向词2;----到达某一个角
+                    to top left;-------从右下角开始，到达左上角
+                    to top right;------从左下角开始，到达右上角
+                    to bottom left;----从右上角开始，到达左下角
+                    to bottom right;---从左上角开始，到达右下角
      -->
 </body>
 </html>
