@@ -16,7 +16,9 @@
             /* 到达某一个角，沿着某一个角进行渐变 */
             /* background: linear-gradient(to top left,red,green,blue); */
             /* 只跟颜色，不跟方向词 */
-            background: linear-gradient(red,green,blue);
+            /* background: linear-gradient(red,green,blue); */
+            /* 度数 */
+            background: linear-gradient(10deg,red,green,blue);
         }
     </style>
 </head>
@@ -44,6 +46,10 @@
                     to bottom left;----从右上角开始，到达左下角
                     to bottom right;---从左上角开始，到达右下角
             （3）不跟任何参数也能实现，默认是从上向下进行渐变的
+                to bottom;
+            （4）沿着一个度数/角度进行渐变
+                numdeg num代表数值  deg代表度数单位
+                问题：如果不跟度数以及方向词，默认是多少度------默认180度
 
      -->
 </body>
