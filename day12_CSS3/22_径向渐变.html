@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            /* 径向渐变 */
+            background: radial-gradient(red,green,blue);
+        }
+        .green {
+            width: 600px;
+            height: 300px;
+            border: 10px solid gray;
+            margin-top: 10px;
+            background: radial-gradient(circle,red,green,blue);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <!-- 
+        默认的径向渐变是从中心点开始的
+        默认的渐变方向是对角线结束的
+        默认情况下，渐变形状是椭圆
+    -->
+</body>
+</html>

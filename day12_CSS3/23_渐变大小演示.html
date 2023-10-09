@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 500px;
+            height: 300px;
+            border: 10px solid gray;
+            float: left;
+            margin: 20px;
+        }
+        /* 到达最近的边结束 */
+        .box1 {
+            background: -webkit-radial-gradient(100px 50px,closest-side,red,green,blue);
+        }
+        /* 到达最近的边结束 */
+        .box2 {
+            background: -webkit-radial-gradient(100px 50px,farthest-side,red,green,blue);
+        }
+        /* 到达最近的角结束 */
+        .box3 {
+            background: -webkit-radial-gradient(100px 50px,closest-corner,red,green,blue);
+        }
+        /* 到达最远的角结束 */
+        .box4 {
+            background: -webkit-radial-gradient(100px 50px,farthest-corner,red,green,blue);
+        }
+
+        /* 
+            注释：
+                如果你添加了渐变中心以及渐变大小，则需要考虑浏览器的兼容问题---添加属性值的前缀
+            总结：
+                -webkit-   :   chrome safari
+                -ms-       :   IE
+                -moz-      :   firefox
+                -o-        :   opera
+        */
+    </style>
+</head>
+<body>
+    <!-- 到达最近的边结束 -->
+    <div class="box1"></div>
+    <!-- 到达最远的边结束 -->
+    <div class="box2"></div>
+    <!-- 到达最近的角结束 -->
+    <div class="box3"></div>
+    <!-- 到达最远的角结束 -->
+    <div class="box4"></div>
+</body>
+</html>
