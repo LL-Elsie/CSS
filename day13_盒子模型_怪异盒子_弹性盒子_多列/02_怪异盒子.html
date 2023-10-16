@@ -15,8 +15,12 @@
             height: 200px;
             background-color: red;
             /* 触发盒子模型显示形式的属性 */
+            /* 当你触发完怪异盒子之后，添加内边距不会把盒子撑大了 */
+            /* 当你触发怪异盒子模型之后，添加的边框不会把盒子撑大 */
             box-sizing: border-box;
             padding: 50px;
+            border: 20px solid green;
+            margin: 50px;
         }
     </style>
 </head>
