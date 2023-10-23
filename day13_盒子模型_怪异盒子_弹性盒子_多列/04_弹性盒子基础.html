@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid gray;
+            /* 父元素触发弹性盒子 */
+            display: flex;
+        }
+        /* 为什么P标签默认纵向显示：因为p为块级元素 */
+        p,b {
+            width: 50px;
+            height: 50px;
+            border: 2px dashed red;
+            /* 添加margin:auto */
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        <!-- <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p> -->
+        <b>1</b>
+        <!-- <b>2</b>
+        <b>3</b>
+        <b>4</b> -->
+    </div>
+    <!-- 
+        基础知识:
+            1)弹性盒子
+                是一种布局方法;主要是为了让布局在不同的页面中,不同的设备中进行正常的显示
+            2)如何触发弹性盒子
+                给父元素添加display:flex
+                影响的是子元素
+            3)影响?
+                a)会让默认纵向排列的元素,横向显示:
+                    类似于浮动,但不是浮动---因为计算属性里面的float取值为none
+                b)会让子元素变成块级元素,改变子元素的显示类型
+                c)如果只有一个子元素的话,给子元素添加margin:auto则会实现水平垂直居中显示
+            4)基础概念
+                容器:父元素;给父元素触发弹性盒子
+                项目:子元素,父元素触发弹性盒子之后,影响的都是子元素
+                横轴:水平方向的轴线
+                纵轴:垂直方向的轴线
+                主轴(*):触发弹性盒子之后,子元素的排列方向
+                侧周(*):触发弹性盒子之后,与主轴对立的方向
+                移动端布局里面,flex布局里面,弹性盒子布局里面最主要的就是按照轴线进行布局
+                
+    -->
 </body>
 </html>
