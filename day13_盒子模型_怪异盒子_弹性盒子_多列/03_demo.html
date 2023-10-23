@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 204px;
+            border: 2px solid gray;
+            margin: 100px auto;
+            padding: 12px 10px;
+            box-sizing: border-box;
+        }
+        div>p:first-child {
+            width: 74px;
+            height: 74px;
+            background-color: greenyellow;
+            margin: 0 auto;
+            /* 变成圆形 */
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        div>p:nth-child(2) {
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+        div>p:nth-child(3) {
+            background-color: skyblue;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+            line-height: 22px;
+            /* 实现宽度自适应 */
+            margin: 0 34px;
+            /* 实现外边距 */
+            margin-bottom: 10px;
+        }
+        div>p:last-child {
+            border-top: 1px solid gray;
+            font-size: 12px;
+            padding-top: 10px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p></p>
+        <p>你好</p>
+        <p>这里是标签页</p>
+        <p>最后被你打败，只是依旧还想念着你的温柔。<br>
+            人生最好的状态，是每天醒来，面朝阳光，嘴角上扬。不羡慕谁，不讨好谁，默默努力，活成自己想要的模样。</p>
+    </div>
+</body>
+</html>
