@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 1030px;
+            height: 290px;
+            background-color: yellow;
+            margin: 100px auto;
+            /* 触发弹性盒子 */
+            display: flex;
+            /* 主轴上面的对齐方式 */
+            justify-content: space-between;
+        }
+        .box>div {
+            width: 250px;
+            height: 290px;
+            background-color: orange;
+            /* 原始方法 */
+            /* float: left;
+            margin-right: 10px; */
+        }
+        /* .box>.last {
+            margin-right: 0;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="last"></div>
+    </div>
+</body>
+</html>
