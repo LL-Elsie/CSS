@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 10px solid gray;
+            /* 触发弹性盒子 */
+            display: flex;
+            /* flex-direction: column; */
+        }
+        p {
+            /* width: 50px; */
+            height: 50px;
+            border: 2px dashed red;
+            flex: 1;
+        }
+        /* p:nth-child(2) {
+            width: 100px;
+        }
+        p:nth-child(3) {
+            flex: 1;
+        } */
+
+
+        /* 
+            注意事项:
+                1)主轴在横向:项目不设置高度的话,则高度是拉伸的
+                1)主轴在纵向:项目不设置宽度的话,则宽度是拉伸的
+            1)占剩余屏幕宽度的所有:
+                主轴:横向
+                    例如:第一个盒子:50px
+                        第二个盒子:100px;
+                        第三个盒子:占剩余宽度的所有:flex:1
+                如何均分? 只要所有的项目取值都一样的话,则实现效果是均分的:
+                    flex:1
+                    flex:2
+                    flex:3
+            2)占剩余高度的所有
+                主轴:纵向
+                    flex:1;
+                高度是否能均分呢?=====取值一样即可
+                    flex:1
+                    flex:2
+                    flex:3
+        */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+</body>
+</html>
