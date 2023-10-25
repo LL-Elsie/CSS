@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bigbox {
+            height: 500px;
+            text-align: justify;
+            border: 10px solid gray;
+            /* 划分列数 */
+            column-count: 4;
+            /* 调整列宽 */
+            /* 如果设置的过小的话,不会影响列数,但是你的列宽如果设置的较宽的话会影响列数 */
+            /* column-width: 200px; */
+            /* 调整列间距 */
+            /* 注释: 列间距一般不调整,使用默认值 */
+            column-gap:100px;
+            /* 设置列间隔线 */
+            /* 列间隔线类似于边框,相当于是一个复合属性 */
+            column-rule: 2px dashed red;
+            /* 检索列的高度 */
+            /* 默认的列的高度是均分的 */
+            /* column-fill检索列的高度是否均分,或者是占父元素的所有的高度 */
+            /* balance==均衡,登高;  auto===自动,会撑满整个父元素 */
+            /* column-fill: balance; */
+        }
+        /* 设置跨列====子元素上面的属性 */
+        h1{
+            column-span: all;
+            text-align: center;
+            background-color: orange
+            ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 划分多列布局:
+            按照区块进行划分,可以理解成按照列数进行布局
+    -->
+    <div class="bigbox">
+        <h1>我是该模块的主题</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet repellendus recusandae? Odio quisquam magnam eius reprehenderit quaerat harum deleniti praesentium accusantium exercitationem voluptate consequatur, repudiandae minus unde non inventore.
+    </div>
+</body>
+</html>
