@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: purple;
+            background-image: url(images/a.png);
+        }
+        .bigbox {
+            width: 95%;
+            /* height: 2000px; */
+            /* border: 10px solid gray; */
+            margin: 0 auto;
+            /* 划分列数 */
+            column-count: 5;
+            color: white;
+
+        }
+        /* 解决图片下面3像素留白问题 */
+        img {
+            display: block;
+            width: 100%;
+        }
+        .bigbox>div {
+            border:2px solid deeppink;
+            /* 控制子元素不折行:跨到下一列的意思 */
+            break-inside: avoid;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+            padding-top:5px
+        }
+    </style>
+</head>
+<body>
+    <!-- 大的盒子:里面有好多个小的盒子:小的盒子里面有很多图片 -->
+    <!-- 注释:多列主要应用于,参差不齐的瀑布流里面 -->
+    <!-- 由于默认的情况下:元素子元素,是均分的;column-fill:balance -->
+    <!-- 设置子元素不应该折行 -->
+    <!-- 使用多列的时候,不要给父元素设置高度,设置高度之后,子元素过多的话,会向屏幕右侧撑满,增加列数 -->
+    <div class="bigbox">
+        <div>
+            <img src="images/1.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/2.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/3.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/4.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/5.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/6.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/7.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/8.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/9.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/10.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/11.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/12.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/13.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/14.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/15.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/16.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/21.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/23.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/24.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/25.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/19.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/29.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/39.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/49.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/50.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/1.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/2.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/3.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/4.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/5.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/1.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/2.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/3.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/4.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+        <div>
+            <img src="images/5.jpg" alt="">
+            <p>往后余生,啥都是你</p>
+        </div>
+    </div>
+        
+</body>
+</html>
