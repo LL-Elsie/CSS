@@ -6,7 +6,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,input,select,textarea,img{
 ul,ol{
     list-style:none;
 }
-/* 解决3px */
+/* 解决3px留白问题 */
 img{
     display: block;    
 }

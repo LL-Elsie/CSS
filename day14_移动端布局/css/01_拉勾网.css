@@ -1,0 +1,134 @@
+/* 1)行代码:窗口的自适应 */
+html,body{
+    height:100%;
+}
+body{
+    /* 触发 */
+    display: flex;
+    /* 改变主轴方向 */
+    flex-direction: column;
+}
+/* 头部 */
+header{
+    /* 不输入宽度，使得宽度自适应 */
+    /* width:375px; */
+    height: 45px;
+    background-color: #00b38a;
+    color:white;
+    font-size:18px;
+    text-align: center;
+    line-height: 45px;
+}
+/* 尾部 */
+footer{
+    height:46px;
+    border-top:1px solid gray;
+    background-color: yellow;
+}
+/* 主体 */
+section{
+    flex:1;
+    /* background-color: orange; */
+}
+/* 主体区域里面的内容 */
+nav{
+    height:44px;
+    /* background-color: deepskyblue; */
+    border-bottom: 1px solid gray;
+    /* 添加内边距把间距撑开 */
+    padding:0px 16px;
+    /* 父元素触发弹性盒子 */
+    display: flex;
+    /* 主轴对齐方式 */
+    justify-content: space-between;
+    /* 侧轴对齐方式 */
+    align-items: center;
+}
+nav>span:first-child{
+    color:#555555;
+    font-size:14px;
+}
+nav>span:last-child{
+    color:#00b38a;
+    font-size: 14px;
+    width: 84px;
+    height:30px;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+}
+main{
+    height: 90px;
+    border-bottom:1px solid gray;
+    /* 触发弹性盒子 */
+    display: flex;
+}
+main>img{
+    width:60px;
+    height:60px;
+    margin:14px;
+}
+main>div{
+    flex:1
+}
+main>span{
+    margin-right:12px;
+    line-height: 90px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#00b38a;
+}
+main>div>p:first-child{
+    font-weight: bold;
+    margin-top:15px;
+}
+main>div>p:nth-child(2){
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+}
+main>div>p:nth-child(3){
+    font-size: 12px;
+    font-weight: bold;
+    color:#555555;
+}
+section>p{
+    background-color: #fafafa;
+    height:53px;
+    text-align: center;
+    line-height: 53px;
+    color:#555555;
+    font-size: 14px;
+}
+/* 注释:a标签有自己的颜色,所以不会继承 */
+a{
+    color:#555555
+}
+article,aside{
+    text-align: center;
+    font-size: 12px;
+    color:#555555
+}
+article{
+    margin-top:30px
+}
+/* 尾部修饰 */
+footer{
+    background-color: #f6f6f6;
+    display: flex;
+    text-align: center;
+}
+footer>div{
+    flex:1;
+    color:#c2cfcc;
+    line-height: 46px;
+}
+footer>div>span{
+    font-size: 14px;
+}
+/* 尾部划过样式 */
+footer>div:hover{
+    background-color: #e7f3f0;
+    color:#00b38a
+}
