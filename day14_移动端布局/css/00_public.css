@@ -1,0 +1,23 @@
+/* 取消元素自带的内边距和外边距 */
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,input,select,textarea,img{
+    margin:0;padding:0
+}
+/* 取消列表项 */
+ul,ol{
+    list-style:none;
+}
+/* 解决3px */
+img{
+    display: block;    
+}
+/* 解决输入框问题 */
+input{
+    outline:none;
+    border:none;
+}
+/* 样式 */
+a,b,strong,u,s,del,i,em{
+    text-decoration: none;
+    font-weight:normal;
+    font-style: normal;
+}

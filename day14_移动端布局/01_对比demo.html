@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale,1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding:0
+        }
+        .box{
+            width:700px;
+            height:300px;
+            background-color: red;    
+        }
+    </style>
+</head>
+<body>
+    <!-- 注意:先要把前面的两行没有用处的代码先删除掉 -->
+    <!-- 考虑:
+        pc=====700*300
+            1)700像素大小的盒子们居然能在对应的手机屏幕中完全的显示出来,还有留白
+        设备模拟器里面居然能双击放大
+        产生问题的原因啥?
+            是由于他们之间的视口是不同的
+                布局视口:你编写的页面
+                视觉视口:就是你的屏幕窗口
+                理想视口:理想化的视口,通过一行代码,直接把你的布局直接放在视觉视口里面
+                    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+                    name="viewport"    理想视口必须的一行代码
+                    content=""         内容设置
+                    width=device-width==========设置的宽度与设备的宽度一直
+                    initial-scale=1.0===========初始缩放比例1.0
+                    minimum-scale=1.0===========最小的缩放比例为1.0
+                    maximum-scale=1.0===========最大的缩放比例为1.0
+                    user-scalable=no============不允许用户缩放
+
+
+
+
+
+    -->
+    <div class="box"></div>
+</body>
+</html>
