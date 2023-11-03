@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 媒体查询 */
+        @media screen and (min-width:1024px) {
+            body {
+                background-color: red;
+            }
+        }
+        /* 注意事项:多个临界值一起使用的时候,实现效果是在max-width位置处实现的 */
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        @media screen and (min-width:480px) and (max-width:768px) {
+            body {
+                background-color: blue;
+            }
+        }
+        @media screen and (max-width:480px) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        根据不同的屏幕大小,来改变body的颜色
+        1024px以上的时候,body颜色变成红色(min-wdith:1024px)
+        768-1024之间的时候,body颜色变成黄色(min-width:768px) and (max-width:1024px)
+        480-768之间的时候,body颜色变成蓝色(min-width:480px) and (max-width:768px)
+        小于480的时候,body颜色变成绿色(max-width:480px)
+    -->
+</body>
+</html>
