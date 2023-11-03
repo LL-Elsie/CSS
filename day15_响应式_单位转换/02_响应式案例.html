@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            display: block;
+        }
+        .bigbox {
+            width: 98%;
+            /* height: 500px; */
+            border: 5px solid gray;
+            margin: 0 auto;
+            /* 触发弹性盒子 */
+            display: flex;
+            /* 主轴上面的对齐方式 */
+            justify-content: space-around;
+        }
+        div {
+            border: 2px solid red;
+            padding: 5px;
+            width: 24%;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+        }
+        div>p {
+            line-height: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* 响应式: 根据媒体查询检测屏幕的大小改变布局 */
+        @media screen and (min-width:1024px) {
+            .bigbox>div {
+                width: 24%;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            .bigbox>div {
+                width: 32%;
+            }
+        }
+        @media screen and (min-width:450px) and (max-width:768px) {
+            .bigbox>div {
+                width: 48%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .bigbox>div {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        4: 给每一个盒子(子元素宽度25%) 23% 1024以上, (min-width:1024px)
+        3: 给每一个盒子(子元素宽度33.33%) 32%  768-1024之间 (min-width:768px) and (max-width:1024px)
+        2: 给每一个盒子(子元素宽度:50%) 48% 450-768之间 (min-width:450px) and (max-width:768px)
+        1: 给每一个盒子(子元素宽度:98%)  450px以下 (max-width:450px)
+    -->
+    <div class="bigbox">
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/img1.jpg" alt="">
+            <p>
+                <span>田园系风格</span>
+                <span>2023.11.03</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
